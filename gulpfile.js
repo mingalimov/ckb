@@ -15,17 +15,14 @@ gulp.task('js', function () {
 		.pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('css', function () {
-	shell.task([
-		'r.js -o cssIn=bower_components/r5m-cms/css/all.css out=dist/lp.css'
-	]);
-});
+gulp.task('css', shell.task([
+	'r.js -o cssIn=bower_components/r5m-cms/css/all.css out=dist/lp.css'
+]));
 
-gulp.task('install', function() {
-	shell.task([
-		'bower install https://github.com/milikhin/r5m-client.git',
-		'cd bower_components/r5m-cms; git init; git remote add origin git@github.com:milikhin/r5m-client.git'
-	]);
-});
+gulp.task('install', shell.task([
+	'bower install https://github.com/milikhin/r5m-client.git',
+	'cd bower_components/r5m-cms; git init; git remote add origin git@github.com:milikhin/r5m-client.git; git pull origin master;'
+]));
+
 
 gulp.task('default', ['js', 'css', 'daemon']);
