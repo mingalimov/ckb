@@ -16,7 +16,8 @@ gulp.task('js', function () {
 });
 
 gulp.task('css', shell.task([
-	'r.js -o cssIn=bower_components/r5m-cms/css/all.css out=dist/lp.css'
+	'r.js -o cssIn=bower_components/r5m-cms/css/all.css out=dist/engine.css',
+	'r.js -o cssIn=dist/engine.css out=dist/lp.css'
 ]));
 
 gulp.task('install', shell.task([
