@@ -21,7 +21,11 @@ gulp.task('css', shell.task([
 
 gulp.task('install', shell.task([
 	'bower install https://github.com/milikhin/r5m-client.git',
-	'cd bower_components/r5m-cms; git init; git remote add origin git@github.com:milikhin/r5m-client.git; git pull origin master;'
+	'cd bower_components/r5m-cms; git init; \
+	git remote add origin git@github.com:milikhin/r5m-client.git; \
+	git add --all; \
+	git rm --cached .bower.json; \
+	git pull origin master;'
 ]));
 
 
