@@ -3,7 +3,8 @@ var shell = require('gulp-shell');
 
 gulp.task('daemon', function () {
 	gulp.watch('css/**/*.css', ['css']);
-	gulp.watch('js/**/*.js', ['js']);
+	gulp.watch('bower_components/**/*.css', ['css']);
+	gulp.watch('bower_components/**/*.js', ['js']);
 });
 
 
