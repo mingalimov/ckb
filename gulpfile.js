@@ -16,10 +16,16 @@ gulp.task('js', function () {
 });
 
 gulp.task('css', function () {
-	gulp.src('').pipe(shell([
+	shell.task([
 		'r.js -o cssIn=bower_components/r5m-cms/css/all.css out=dist/lp.css'
-	]));
+	]);
 });
 
+gulp.task('install', function() {
+	shell.task([
+		'bower install https://github.com/milikhin/r5m-client.git',
+		'cd bower_components/r5m-cms; git init; git remote add origin git@github.com:milikhin/r5m-client.git'
+	]);
+});
 
 gulp.task('default', ['js', 'css', 'daemon']);
