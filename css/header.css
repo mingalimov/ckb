@@ -48,7 +48,9 @@
 }
 
 .header__order__call__link {
-  text-decoration-style: dashed;
+  /*text-decoration-style: dashed;*/
+  text-decoration: none;
+  border-bottom: 1px dashed #ffffff;
   color: #ffffff;
 }
 
@@ -63,6 +65,7 @@
   font-size: 1.6rem;
   font-weight: bold;
   color: #000000;
+  background-color: #ffffff;
   border-radius: 6px;
   box-shadow: inset -4px -4px #c3c3c3;
 }
