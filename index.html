@@ -54,7 +54,7 @@
             <p class="header__order__phone">
               +7-906-935-12-98
             </p>
-            <a class="header__order__call__link" href="#">
+            <a class="header__order__call__link" href="#" data-type="call" data-action="r5mDimmer-show">
               Заказать звонок
             </a>
           </div>
@@ -90,6 +90,9 @@
         </div> -->
       </div>
     </header>
+
+
+
 
     <div class="body-container">
       <section class="profits-container flexible-container clearfix"><!--
@@ -131,24 +134,30 @@
         </div>
       </section>
     </div>
+
+
+
     <div class="body-container request-section">
       <div class="flexible-container">
         <div class="request-container clearfix">
           <div class="request__picture-wrapper">
             <img class="request__picture" src="images/operator.jpg">
           </div>
-          <form class="request__form">
+          <form class="request__form r5mFeedback__form">
               <p class="request__headline">Заполните заявку</p>
               <p class="request__subheadline">и наши специалисты свяжутся с Вами для подбора оптимального графика обучения</p>
               <input type="text" name="name" placeholder="Введите Ваше имя">
-              <input type="email" name="email" placeholder="Введите Ваш E-mail">
-              <button class="request__form__button" type="button">
+              <input type="email" name="email" placeholder="Введите Ваш E-mail" required>
+              <button class="request__form__button" type="submit">
                 <span class="button__label">Отправить заявку</span>
               </button>
           </form>
         </div>
       </div>
     </div>
+
+
+
     <div class="flexible-container">
       <section class="info-container clearfix">
             <div class="info-wrapper info_left">
@@ -161,15 +170,21 @@
                 </ul>
                 <p class="period">Срок обучения - 1 месяц</p>
                 <p class="price">Цена: 9500 р</p>
-                <button class="button" type="button">
+                <button class="button" type="button" data-action="r5mDimmer-show" data-type="call">
                   <span class="button__label">Начать обучение</span>
                 </button>
                 <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
             </div>
             <img class="info__picture info_right" src="images/info-pic.jpg">
         </section>
-      </div>
-      <div class="flexible-container">
+    </div>
+
+
+
+
+
+
+     <div class="flexible-container">
       <section class="info-container clearfix">
           <div class="info-wrapper info_right">
               <h2 class="info__headline">Обучение управлению катером, мотолодкой и гидроциклом у нас это:</h2>
@@ -181,7 +196,7 @@
               </ul>
               <p class="period">Срок обучения - 1 месяц</p>
               <p class="price">Цена: 5000-9500 р</p>
-              <button class="button" type="button">
+              <button class="button" type="button" data-action="r5mDimmer-show" data-type="call">
                 <span class="button__label">Начать обучение</span>
               </button>
               <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
@@ -189,6 +204,11 @@
           <img class="info__picture info_left" src="images/info-pic.jpg">
       </section>
     </div>
+
+
+
+
+
 
     <footer class="footer">
       <div class="flexible-container">
@@ -205,13 +225,18 @@
             <p class="footer__phone">+7-906-935-12-38</p>
             <p class="footer__phone">+7-960-918-41-61</p>
           </div>
-          <a class="footer__order__call__link" href="#">Заказать звонок</a>
+          <a class="footer__order__call__link" href="#" data-action="r5mDimmer-show" data-type="call">Заказать звонок</a>
         <!-- <div class="copyleft"></div>
         <div class="copyright">
           &copy; 2016
         </div> -->
       </div>
     </footer>
+
+
+
+
+
 
 
     <!-- forms -->
@@ -307,5 +332,10 @@
           </div>
         </div>
       </div>
+
+
+
+
+
   </body>
 </html>
