@@ -39,6 +39,7 @@
   width: 65%;
   height: auto;
   margin: 0 auto 15px;
+  max-width: 120px;
 }
 
 .profit__text {

@@ -4,7 +4,8 @@
 }
 
 .request-container {
-  width: 80%;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   /*border: 2px solid black;*/
   border-radius: 15px;
@@ -17,8 +18,8 @@
 
 .request__picture-wrapper {
   float: left;
-  width: 50%;
-  height: 100%;
+  width: 40%;
+/*  height: 100%;*/
   /*-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;*/
@@ -34,12 +35,16 @@
 
 .request__form {
   width: 50%;
-  float: right;
+/*  float: right;*/
+  margin-left: 45%;
   padding: 20px 30px 20px 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
+  background-image: url("./../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 104% 95%;
 }
 
 .request__form input,
