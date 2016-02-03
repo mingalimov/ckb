@@ -1,0 +1,72 @@
+.header {
+  margin: 0;
+  color: #ffffff;
+  background-color: grey;
+}
+
+.header-container {
+  padding: 20px 20px 100px;
+  /*background-color: grey;*/
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header__logo-wrapper {
+  float: left;
+  margin: 0;
+}
+
+.header__order__phone-wrapper {
+  float: right;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.header__title {
+  clear: both;
+  padding-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-indent: 0;
+}
+
+.header__title__caption {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header__title__caption a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__title__subtitle {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.header__order__call__link {
+  text-decoration-style: dashed;
+  color: #ffffff;
+}
+
+.header__order__call {
+  text-align: center;
+  text-indent: 0;
+}
+
+.header__order__call__button {
+  padding: 15px 25px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000000;
+  border-radius: 6px;
+  box-shadow: inset -4px -4px #c3c3c3;
+}
+
+.header__order__call__button:hover {
+  cursor: pointer;
+}

@@ -1,3 +1,10 @@
 @import 'engine.css';
 
 /* Imports goes here */
+@import 'fonts.css';
+
+@import 'header.css';
+@import 'profits.css';
+@import 'request.css';
+@import 'info-section.css';
+@import 'footer.css';

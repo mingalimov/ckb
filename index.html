@@ -7,10 +7,12 @@
 
     <!-- Built styles -->
     <link href="./dist/lp.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/project.css">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,500,700,600,800,900,300italic,400italic,500italic,600italic,800italic,900italic,700italic,300&subset=cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- App init script -->
     <script src="./dist/require.js"></script>
@@ -43,16 +45,34 @@
 
   <body>
     <header class="header clearfix">
-      <div class="flexible-container">
-        <div class="header__title">
-          <h1 class="header__title__caption">
-            <a href="./">Заголовок</a>
-          </h1>
-          <h2 class="header__title__subtitle">
-            Подзаголовок
-          </h2>
+      <div class="header-container flexible-container">
+        <div class="header__logo-wrapper">
+          <img class="header__logo" src="images/logo.jpg" alt="АНО ДПО МОЦКБ">
         </div>
         <div class="header__order">
+          <div class="header__order__phone-wrapper">
+            <p class="header__order__phone">
+              +7-906-935-12-98
+            </p>
+            <a class="header__order__call__link" href="#">
+              Заказать звонок
+            </a>
+          </div>
+        </div>
+        <div class="header__title">
+          <h1 class="header__title__caption">
+            <a href="./">Обучение управлению:<br/> маломерным моторным судном, катером, гидроциклом;<br/> снегоходом, квадроциклом (категория А1)</a>
+          </h1>
+          <h2 class="header__title__subtitle">
+            96% наших клиентов получают водительское удостоверение с первого раза
+          </h2>
+        </div>
+        <p class="header__order__call">
+          <button class="header__order__call__button" data-action="r5mDimmer-show" data-type="question">
+            Начать обучение
+          </button>
+        </p>
+        <!-- <div class="header__order">
           <div class="header__order__phone-wrapper">
             <p class="header__order__phone">
               +7 912 345 6789
@@ -67,17 +87,129 @@
               Оставить заявку
             </button>
           </p>
-        </div>
+        </div> -->
       </div>
     </header>
 
+    <div class="body-container">
+      <section class="profits-container flexible-container clearfix"><!--
+      --><div class="profit">
+            <figure class="profit__element">
+              <img class="profit__picture" src="images/1.png" alt="Индивидуальный график" title="Индивидуальный график">
+              <figcaption class="profit__text">
+                <p class="profit__headline">Индивидуальный график</p>
+                <p class="profit__description">Вы сами выбираете удобное расписание занятий</p>
+              </figcaption>
+            </figure>
+        </div><!--
+        --><div class="profit">
+            <figure class="profit__element">
+              <img class="profit__picture" src="images/2.png" alt="Сопровождение на экзамене" title="Сопровождение на экзамене">
+              <figcaption class="profit__text">
+                <p class="profit__headline">Сопровождение на экзамене</p>
+                <p class="profit__description">Представление Ваших интересов в ГИМС и Гостехнадзоре</p>
+              </figcaption>
+            </figure>
+        </div><!--
+        --><div class="profit">
+            <figure class="profit__element">
+              <img class="profit__picture" src="images/3.png" alt="Высококвалифицированные специалисты" title="Высококвалифицированные специалисты">
+              <figcaption class="profit__text">
+                <p class="profit__headline">Квалифицированные специалисты</p>
+                <p class="profit__description">Гарантированная сдача экзаменов</p>
+              </figcaption>
+            </figure>
+        </div><!--
+        --><div class="profit">
+            <figure class="profit__element">
+              <img class="profit__picture" src="images/4.png" alt="Удобное расположение в центре города" title="Удобное расположение в центре города">
+              <figcaption class="profit__text">
+                <p class="profit__headline">Удобное расположение в центре города</p>
+                <p class="profit__description">Наш офис расположен по адресу: пр. Строителей 7, корпус А1</p>
+              </figcaption>
+            </figure>
+        </div>
+      </section>
+    </div>
+    <div class="body-container request-section">
+      <div class="flexible-container">
+        <div class="request-container clearfix">
+          <div class="request__picture-wrapper">
+            <img class="request__picture" src="images/operator.jpg">
+          </div>
+          <form class="request__form">
+              <p class="request__headline">Заполните заявку</p>
+              <p class="request__subheadline">и наши специалисты свяжутся с Вами для подбора оптимального графика обучения</p>
+              <input type="text" name="name" placeholder="Введите Ваше имя">
+              <input type="email" name="email" placeholder="Введите Ваш E-mail">
+              <button class="request__form__button" type="button">
+                <span class="button__label">Отправить заявку</span>
+              </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="flexible-container">
+      <section class="info-container clearfix">
+            <div class="info-wrapper info_left">
+                <h2 class="info__headline">Обучение вождению квадроциклов и снегоходов у нас это:</h2>
+                <ul class="info__points">
+                  <li class="info__point">Теоретические занятия в специально оборудованных  классах</li>
+                  <li class="info__point">Практические занятия по управлению квадроциклом</li>
+                  <li class="info__point">Организованная сдача экзаменов</li>
+                  <li class="info__point">Удостоверение тракториста-машиниста (категория А1)</li>
+                </ul>
+                <p class="period">Срок обучения - 1 месяц</p>
+                <p class="price">Цена: 9500 р</p>
+                <button class="button" type="button">
+                  <span class="button__label">Начать обучение</span>
+                </button>
+                <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
+            </div>
+            <img class="info__picture info_right" src="images/info-pic.jpg">
+        </section>
+      </div>
+      <div class="flexible-container">
+      <section class="info-container clearfix">
+          <div class="info-wrapper info_right">
+              <h2 class="info__headline">Обучение управлению катером, мотолодкой и гидроциклом у нас это:</h2>
+              <ul class="info__points">
+                <li class="info__point">Теоретические занятия в специально оборудованных  классах</li>
+                <li class="info__point">Практические занятия по управлению и эксплуатации катера</li>
+                <li class="info__point">Организованная сдача экзаменов</li>
+                <li class="info__point">Удостоверение на право управления маломерным судном</li>
+              </ul>
+              <p class="period">Срок обучения - 1 месяц</p>
+              <p class="price">Цена: 5000-9500 р</p>
+              <button class="button" type="button">
+                <span class="button__label">Начать обучение</span>
+              </button>
+              <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
+          </div>
+          <img class="info__picture info_left" src="images/info-pic.jpg">
+      </section>
+    </div>
+
     <footer class="footer">
       <div class="flexible-container">
-
-        <div class="copyleft"></div>
+        <div class="footer__details footer__details_left">
+            <p class="footer__contacts">АНО ДПО<br/>
+                "Многопрофильный образовательный<br/>
+                центр комплексной безопасности"<br/>
+                г.Новокузнецк, ул. Строителей 7, корп. А1</p>
+            <div class="copyright">
+                &copy; 2016
+            </div>
+          </div>
+          <div class="footer__details footer__details_right">
+            <p class="footer__phone">+7-906-935-12-38</p>
+            <p class="footer__phone">+7-960-918-41-61</p>
+            <a class="footer__order__call__link" href="#">Заказать звонок</a>
+          </div>
+        <!-- <div class="copyleft"></div>
         <div class="copyright">
           &copy; 2016
-        </div>
+        </div> -->
       </div>
     </footer>
 

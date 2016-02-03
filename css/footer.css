@@ -1,0 +1,34 @@
+.footer-container {
+  width: 100%;
+}
+
+.footer__details {
+  display: block;
+  width: 40%;
+  color: #636363;
+}
+
+.footer__details_left {
+  float: left;
+  text-align: left;
+}
+
+.footer__details_right {
+  float: right;
+  text-align: right;
+}
+
+.footer__contacts {
+  margin: 0;
+}
+
+.footer__phone {
+  margin: 0;
+}
+
+.footer__order__call__link {
+  display: block;
+  margin-top: 20px;
+  color: #636363;
+  text-decoration-style: dashed;
+}
