@@ -2,6 +2,15 @@
   margin: 0;
   color: #ffffff;
   background-color: grey;
+  background-image: url("./../images/header.jpg");
+  background-size: cover;
+
+/*  background-image: url("./../images/header.jpg");
+background-position: center top;
+background-repeat: no-repeat;
+background-size: auto auto;
+color: #ffffff;
+margin: 0;*/
 }
 
 .header-container {
@@ -14,27 +23,41 @@
 
 .header__logo-wrapper {
   float: left;
-  margin: 0;
+  text-shadow: 1px 3px 2px black, -1px -2px 2px black;
 }
 
-.header__order__phone-wrapper {
+.header__logo {
+  width: 56px;
+  display: inline-block;
+}
+
+.header__logo-title {
+  margin: 0 0 0 15px;
+  font-size: 1rem;
+  display: inline-block;
+
+}
+
+.header__order-wrapper {
   float: right;
-  margin: 0;
-  padding: 0;
+  /*margin: 0;
+  padding: 0;*/
   text-align: right;
 }
 
 .header__title {
   clear: both;
-  padding-top: 30px;
+  margin-top: 60px;
   margin-bottom: 40px;
   text-align: center;
   text-indent: 0;
+  text-shadow: 1px 3px 5px black, -1px -2px 4px black;
+
 }
 
 .header__title__caption {
-  font-size: 2rem;
-  font-weight: bold;
+/*  font-size: 2rem;
+  font-weight: bold;*/
 }
 
 .header__title__caption a {
@@ -43,8 +66,8 @@
 }
 
 .header__title__subtitle {
-  font-size: 1.4rem;
-  font-weight: normal;
+/*  font-size: 1.4rem;
+*/  font-weight: 400;
 }
 
 .header__order__call__link {
@@ -60,14 +83,23 @@
 }
 
 .header__order__call__button {
-  padding: 15px 25px;
+  padding: 10px 25px;
   font-family: 'Exo 2', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
-  color: #000000;
-  background-color: #ffffff;
+  color: black;
+  background-color: white;
   border-radius: 6px;
-  box-shadow: inset -4px -4px #c3c3c3;
+/*  box-shadow: inset -4px -4px #c3c3c3;*/
+  border-left: 4px solid white;
+  border-top: 4px solid white;
+  border-bottom: 4px solid #c3c3c3;
+  border-right: 4px solid #c3c3c3;
+}
+
+.header__order__call__button span {
+  display: inline-block;
+  padding-bottom: 4px;
 }
 
 .header__order__call__button:hover {
