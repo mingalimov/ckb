@@ -68,9 +68,14 @@
 
 .request__form__button {
   margin: 10px auto 0;
+  padding: 9px 15px;
   background-color: #e8b400;
   color: #42392a;
-  box-shadow: inset 4px 4px #ecc230, inset -5px -4px #cda000;
+  /*box-shadow: inset 4px 4px #ecc230, inset -5px -4px #cda000;*/
+  border-left: 4px solid #ecc230;
+  border-top: 4px solid #ecc230;
+  border-right: 4px solid #cda000;
+  border-bottom: 4px solid #cda000;
 }
 
 .request__form__button:hover {
