@@ -154,10 +154,10 @@
     <div class="body-container request-section">
       <div class="flexible-container">
         <div class="request-container clearfix">
-          <div class="request__picture-wrapper">
+          <div class="request__picture-wrapper request__picture_left">
             <img class="request__picture" src="images/operator.jpg">
           </div>
-          <form class="request__form r5mFeedback__form">
+          <form class="request__form request__form_right r5mFeedback__form">
               <p class="request__headline">Заполните заявку</p>
               <p class="request__subheadline">и наши специалисты свяжутся с Вами для подбора оптимального графика обучения</p>
               <input type="text" name="name" placeholder="Введите Ваше имя">
@@ -174,7 +174,10 @@
   <div class="body-container info-section">
     <div class="flexible-container">
       <section class="info-container clearfix">
-            <div class="info-wrapper info_left">
+            <div class="info__picture-wrapper info_right">
+              <img class="info__picture" src="images/info-pic.jpg">
+            </div>
+            <div class="info-wrapper info-wrapper_left">
                 <h2 class="info__headline">Обучение вождению квадроциклов и снегоходов у нас это:</h2>
                 <ul class="info__points">
                   <li class="info__point">Теоретические занятия в специально оборудованных  классах</li>
@@ -189,9 +192,7 @@
                 </button>
                 <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
             </div>
-            <div class="info__picture-wrapper info_right">
-              <img class="info__picture" src="images/info-pic.jpg">
-            </div>
+
         </section>
     </div>
 
@@ -200,7 +201,10 @@
 
      <div class="flexible-container">
       <section class="info-container clearfix">
-          <div class="info-wrapper info_right">
+          <div class="info__picture-wrapper">
+            <img class="info__picture info_left" src="images/info-pic.jpg">
+          </div>
+          <div class="info-wrapper info-wrapper_right">
               <h2 class="info__headline">Обучение управлению катером, мотолодкой и гидроциклом у нас это:</h2>
               <ul class="info__points">
                 <li class="info__point">Теоретические занятия в специально оборудованных  классах</li>
@@ -215,9 +219,7 @@
               </button>
               <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
           </div>
-          <div class="info__picture-wrapper">
-            <img class="info__picture info_left" src="images/info-pic.jpg">
-          </div>
+
       </section>
     </div>
   </div>
@@ -228,30 +230,42 @@
   <div class="body-container reasons-section">
     <div class="flexible-container">
       <section class="reasons clearfix">
-        <h2 class="reasons__headline">4 причины, зачем нужно учиться вождению:</h2>
-        <div class="reasons-container clearfix">
-           <div class="reason">
-             <p class="reason__content_left">Водительское удостоверение категории А1 Тракториста-машиниста является обязательным для управления внедорожной мототранспортной техникой.</p>
-           </div>
-           <div class="reason">
-             <p class="reason__content_right">Управление квадроциклом или снегоходом без водительского удостоверения категории А1 наказывается лишением водительского удостоверения, выданного ГИБДД, и штрафом.</p>
-           </div>
-           <div class="reason">
-             <p class="reason__content_left">Водительскоое удостоверение на маломерное судно обязательно для управления маломерным моторным судном (катером или лодкой с подвесным мотором), если мощность их двигателя превышает 3,68 кВт или 5л.с.</p>
-           </div>
-           <div class="reason">
-             <p class="reason__content_right">Управление судном без водительского удостоверения или передача управения судном лицу, не имеющему права управления, влечет наложение администратовного штрафа в размере от десяти до пятнадцатии минимальных размеров оплаты труда.</p>
-           </div>
-           <div class="reasons__warning">
-             <p class="reasons__subheadline">Остерегайтесь мошенников!</p>
-             <p class="reason__text">В последнее время участились случаи мошенничества в сфере получения прав на управление маломерными судами. Получить права ГИМС за несколько дней, без сдачи экзаменов и обучения невозможно. Вы останетесь без прав и без денег, с фальшивым удостоверением на руках, что выяснится при первой же остановке и проверке инспектором ГИМС.</p>
+        <h2 class="reasons__title">4 причины, зачем нужно учиться вождению:</h2>
+        <div class="reasons-container">
+          <div class="reasons-wrapper clearfix">
+             <div class="reason">
+               <img class="reason__picture reason__picture_left" src="images/reason-1.png">
+               <p class="reason__content_left">Водительское удостоверение категории А1 Тракториста-машиниста является обязательным для управления внедорожной мототранспортной техникой.</p>
+             </div>
+             <div class="reason">
+               <img class="reason__picture reason__picture_right" src="images/reason-2.png">
+               <p class="reason__content_right">Управление квадроциклом или снегоходом без водительского удостоверения категории А1 наказывается лишением водительского удостоверения, выданного ГИБДД, и штрафом.</p>
+             </div>
+             <div class="reason">
+               <img class="reason__picture reason__picture_left" src="images/reason-3.png">
+               <p class="reason__content_left">Водительскоое удостоверение на маломерное судно обязательно для управления маломерным моторным судном (катером или лодкой с подвесным мотором), если мощность их двигателя превышает 3,68 кВт или 5л.с.</p>
+             </div>
+             <div class="reason">
+               <img class="reason__picture reason__picture_right" src="images/reason-4.png">
+               <p class="reason__content_right">Управление судном без водительского удостоверения или передача управения судном лицу, не имеющему права управления, влечет наложение администратовного штрафа в размере от десяти до пятнадцатии минимальных размеров оплаты труда.</p>
+             </div>
+          </div>
+          <div class="reasons__warning">
+            <p class="reasons__warning__title">Остерегайтесь мошенников!</p>
+            <p class="reasons__warning__content">В последнее время участились случаи мошенничества в сфере получения прав на управление маломерными судами. Получить права ГИМС за несколько дней, без сдачи экзаменов и обучения невозможно. Вы останетесь без прав и без денег, с фальшивым удостоверением на руках, что выяснится при первой же остановке и проверке инспектором ГИМС.</p>
           </div>
         </div>
+       </section>
+       <section class="about-container">
+           <h2 class="about__headline">О нас:</h2>
+           <p class="about__text">Высококвалифицированные преподаватели АНО ДПО "МО Центр комплексной безопасности" помогут вам подготовиться и успешно сдать экзамены в ГИМС и Гостехнадзоре. Понятные методические пособия способствуют быстрому и легкому усвоению материала, а 96% наших клиентов сдают экзамены с первой попытки.</p>
+           <p class="about__text">Индивидуальный график занятий и удобное расположение в центральном районе города помогут вам пройти обучение в кратчайшие сроки. Вы сами выберете удобную вам форму обучения, а сотрудники нашего Учебного Центра будут представлять и защищать Ваши интересы до самого последнего шага - получения прав в ГИМС или удостоверения категории А1.</p>
+           <p class="about__text">Более 300 наших клиентов уже успешно прошли обучение, сдали экзамены и получили водительские удостоверения.</p>
        </section>
     </div>
   </div>
 
-  <div class="body-container about-section">
+  <!-- <div class="body-container about-section">
     <div class="flexible-container">
       <section class="about-container">
           <h2 class="about__headline">О нас:</h2>
@@ -260,9 +274,49 @@
           <p class="about__text">Более 300 наших клиентов уже успешно прошли обучение, сдали экзамены и получили водительские удостоверения.</p>
       </section>
     </div>
+  </div> -->
+  <div class="body-container">
+      <div class="reviews__header">
+
+        <h2 class="reviews__title">Отзывы наших учеников</h2>
+        <hr class="reviews__line"/>
+      </div>
+      <div class="flexible-container">
+          <div class="reviews-container clearfix">
+            <div class="review__photo-container">
+              <img class="review__photo" src="images/photo.jpg" alt="Фото">
+            </div>
+            <p class="review__header">Бушуев Павел Валерьевич</p>
+            <p class="review__description">Получил права категории "А1" и удостоверение судоводителя в 2015 г.,
+                      обучаясь в "Многопрофильном образовательном центре комплексной безопасности".
+                      Организация всего учебного процесса была на отличном уровне. Отдельная благодарность преподавателю теории и практики по управлению
+                      маломерными судами и гидроциклами Першаеву Андрею Владимировичу. Материал доносит в доступной форме, легко все запоминается и сдается легко.
+                      Сотрудники Учебного Центра сопровождали и поддерживали нас и на экзаменах теоретических, и практических в Гостехнадзор, что придавало надежду
+                       и уверенность в получении прав. Обязательно буду рекомендовать этот Центр своим друзьям и знакомым.</p>
+
+          </div>
+      </div>
   </div>
 
 
+  <div class="body-container request-section">
+    <div class="flexible-container">
+      <div class="request-container clearfix">
+        <div class="request__picture-wrapper  request__picture_right">
+          <img class="request__picture" src="images/operator.jpg">
+        </div>
+        <form class="request__form request__form_left r5mFeedback__form">
+            <p class="request__headline">Заполните заявку сейчас</p>
+            <p class="request__subheadline">и начните обучение в удобное для Вас время</p>
+            <input type="text" name="name" placeholder="Введите Ваше имя">
+            <input type="email" name="email" placeholder="Введите Ваш E-mail" required>
+            <button class="request__form__button" type="submit">
+              <span class="button__label">Начать </span>
+            </button>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
     <footer class="footer">
