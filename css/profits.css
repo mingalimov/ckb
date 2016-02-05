@@ -1,0 +1,59 @@
+
+.body-container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profits-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 30px 30px;
+  /*padding-bottom: 30px;*/
+  color: #000000;
+  background-color: #ffffff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profit {
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profit__element {
+  margin: 0;
+  padding: 0 12px;
+  text-indent: 0;
+}
+
+.profit__picture {
+  width: 65%;
+  height: auto;
+  margin: 0 auto 15px;
+  max-width: 120px;
+}
+
+.profit__text {
+  margin: 0;
+  padding: 0;
+}
+
+.profit__headline {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.profit__description {
+  margin: 0;
+}
