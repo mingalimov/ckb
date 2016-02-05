@@ -41,6 +41,7 @@
   width: 170px;
   height: 170px;
   padding: 5px;
+  margin-top: 5px;
   border: 2px solid #2a2a2a;
   border-radius: 5px;
   -moz-box-sizing: border-box;
