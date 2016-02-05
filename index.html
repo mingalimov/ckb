@@ -40,67 +40,61 @@
         });
       });
 
-
     </script>
-    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter35100450 = new Ya.Metrika({ id:35100450, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/35100450" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     <script>
       //Яндекс.Метрика счетчик для отлавливания целей.
       window.onload = function() {
         if (!window.r5m) window.r5m = {};
-        window.r5m.Yandex = { counter: yaCounter35100450, goalName: "r5m-call-me" };
+        window.r5m.Yandex = {
+          counterId: '35100450',
+          defaultGoal: "r5m-call-me"
+        };
       }
+
     </script>
   </head>
 
   <body>
-    <header class="header">
-      <div class="flexible-container">
-        <div class="header-container">
-        <div class="header__top-container clearfix">
-          <div class="header__logo-wrapper">
-            <img class="header__logo" src="images/logo.png" alt="АНО ДПО МОЦКБ">
-            <h2 class="header__logo-title">АНО ДПО<br>Многопрофильный образовательный центр<br>комплексной безопасности</h2>
-          </div>
-          <div class="header__order-wrapper">
-            <div class="header__order__phone-wrapper">
-              <p class="header__order__phone">+7-906-935-12-98</p>
-              <a class="header__order__call__link r5m-action" data-action="r5mDimmer-show" data-type="call" href="#">Заказать звонок</a>
+    <div class="header-wrapper">
+      <header class="header">
+        <div class="flexible-container">
+          <div class="header-container">
+            <div class="header__top-container clearfix">
+              <div class="header__logo-wrapper">
+                <!-- <img class="header__logo" src="images/logo.png" alt="АНО ДПО МОЦКБ"> -->
+                <h2 class="header__logo-title">
+                <a href="./">
+                  Многопрофильный образовательный центр<br>комплексной безопасности
+                </a
+              </h2>
+              </div>
+              <div class="header__order-wrapper">
+                <div class="header__order__phone-wrapper">
+                  <p class="header__order__phone">+7-906-935-12-98
+                    <br/>
+                    <a class="header__order__call__link r5m-action" data-action="r5mDimmer-show" data-type="call" href="#">Заказать звонок</a>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="header__title">
-          <h1 class="header__title__caption">
+            <div class="header__title">
+              <h1 class="header__title__caption">
             <!--<a href="./">Обучение управлению:<br/> маломерным моторным судном, катером, гидроциклом;<br/> снегоходом, квадроциклом (категория А1)</a>-->
             Обучение управлению:<br/> маломерным моторным судном, катером, гидроциклом;<br/> снегоходом, квадроциклом (категория А1)
           </h1>
-          <h2 class="header__title__subtitle">
+              <h2 class="header__title__subtitle">
             96% наших клиентов получают водительское удостоверение с первого раза
           </h2>
-        </div>
-        <p class="header__order__call">
-          <button class="header__order__call__button" data-action="r5mDimmer-show" data-type="question">
-            <span>Начать обучение</span>
-          </button>
-        </p>
-        <!-- <div class="header__order">
-          <div class="header__order__phone-wrapper">
-            <p class="header__order__phone">
-              +7 912 345 6789
+            </div>
+            <p class="header__order__call">
+              <button class="header__order__call__button" data-action="r5mDimmer-show" data-type="question">
+                <span>Начать обучение</span>
+              </button>
             </p>
-            <button class="header__order__call__link" data-action="r5mDimmer-show" data-type="call">
-              Заказать звонок
-              <hr class="header__order__call__link__border" />
-            </button>
           </div>
-          <p class="header__order__call">
-            <button class="header__order__call__button" data-action="r5mDimmer-show" data-type="question">
-              Оставить заявку
-            </button>
-          </p>
-        </div> -->
-      </div>
-      </div>
-    </header>
+        </div>
+      </header>
+    </div>
 
 
 
@@ -108,7 +102,7 @@
     <div class="body-container">
       <div class="flexible-container">
 
-      <section class="profits-container clearfix"><!--
+        <section class="profits-container clearfix"><!--
       --><div class="profit">
             <figure class="profit__element">
               <img class="profit__picture" src="images/1.png" alt="Индивидуальный график" title="Индивидуальный график">
@@ -117,7 +111,7 @@
                 <p class="profit__description">Вы сами выбираете удобное расписание занятий</p>
               </figcaption>
             </figure>
-        </div><!--
+          </div><!--
         --><div class="profit">
             <figure class="profit__element">
               <img class="profit__picture" src="images/2.png" alt="Сопровождение на экзамене" title="Сопровождение на экзамене">
@@ -126,7 +120,7 @@
                 <p class="profit__description">Представление Ваших интересов в ГИМС и Гостехнадзоре</p>
               </figcaption>
             </figure>
-        </div><!--
+          </div><!--
         --><div class="profit">
             <figure class="profit__element">
               <img class="profit__picture" src="images/3.png" alt="Высококвалифицированные специалисты" title="Высококвалифицированные специалисты">
@@ -135,7 +129,7 @@
                 <p class="profit__description">Гарантированная сдача экзаменов</p>
               </figcaption>
             </figure>
-        </div><!--
+          </div><!--
         --><div class="profit">
             <figure class="profit__element">
               <img class="profit__picture" src="images/4.png" alt="Удобное расположение в центре города" title="Удобное расположение в центре города">
@@ -144,9 +138,9 @@
                 <p class="profit__description">Наш офис расположен по адресу: пр. Строителей 7, корпус А1</p>
               </figcaption>
             </figure>
-        </div>
-      </section>
-    </div>
+          </div>
+        </section>
+      </div>
     </div>
 
 
@@ -157,115 +151,118 @@
           <div class="request__picture-wrapper request__picture_left">
             <img class="request__picture" src="images/operator.jpg">
           </div>
-          <form class="request__form request__form_right r5mFeedback__form">
-              <p class="request__headline">Заполните заявку</p>
-              <p class="request__subheadline">и наши специалисты свяжутся с Вами для подбора оптимального графика обучения</p>
-              <input type="text" name="name" placeholder="Введите Ваше имя">
-              <input type="email" name="email" placeholder="Введите Ваш E-mail" required>
-              <button class="request__form__button" type="submit">
-                <span class="button__label">Отправить заявку</span>
-              </button>
+          <form class="request__form request__form_right r5mFeedback__form" data-metrika-goal="r5m-call-me">
+            <p class="request__headline">Заполните заявку</p>
+            <p class="request__subheadline">и наши специалисты свяжутся с Вами для подбора оптимального графика обучения</p>
+            <input type="text" name="name" placeholder="Введите Ваше имя">
+            <input type="email" name="email" placeholder="Введите Ваш E-mail" required>
+            <button class="request__form__button" type="submit">
+              <span class="button__label">Отправить заявку</span>
+            </button>
           </form>
         </div>
       </div>
     </div>
 
 
-  <div class="body-container info-section">
-    <div class="flexible-container">
-      <section class="info-container clearfix">
-            <div class="info__picture-wrapper info_right">
-              <img class="info__picture" src="images/info-pic.jpg">
-            </div>
-            <div class="info-wrapper info-wrapper_left">
-                <h2 class="info__headline">Обучение вождению квадроциклов и снегоходов у нас это:</h2>
-                <ul class="info__points">
-                  <li class="info__point">Теоретические занятия в специально оборудованных  классах</li>
-                  <li class="info__point">Практические занятия по управлению квадроциклом</li>
-                  <li class="info__point">Организованная сдача экзаменов</li>
-                  <li class="info__point">Удостоверение тракториста-машиниста (категория А1)</li>
-                </ul>
-                <p class="period">Срок обучения - 1 месяц</p>
-                <p class="price">Цена: 9500 р</p>
-                <button class="button" type="button" data-action="r5mDimmer-show" data-type="question" data-text="Обучение вождению квадроциклов и снегоходов">
-                  <span class="button__label">Начать обучение</span>
-                </button>
-                <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
-            </div>
+    <div class="body-container info-section">
+      <div class="flexible-container">
+        <section class="info-container clearfix">
+          <div class="info__picture-wrapper info_right">
+            <img class="info__picture" src="images/info-pic.jpg">
+          </div>
+          <div class="info-wrapper info-wrapper_left">
+            <h2 class="info__headline">Обучение вождению квадроциклов и снегоходов у нас это:</h2>
+            <ul class="info__points">
+              <li class="info__point">Теоретические занятия в специально оборудованных классах</li>
+              <li class="info__point">Практические занятия по управлению квадроциклом</li>
+              <li class="info__point">Организованная сдача экзаменов</li>
+              <li class="info__point">Удостоверение тракториста-машиниста (категория А1)</li>
+            </ul>
+            <p class="period">Срок обучения - 1 месяц</p>
+            <p class="price">Цена: 9500 р</p>
+            <button class="button" type="button" data-action="r5mDimmer-show" data-type="question" data-text="Обучение вождению квадроциклов и снегоходов">
+              <span class="button__label">Начать обучение</span>
+            </button>
+            <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
+          </div>
 
         </section>
-    </div>
+      </div>
 
 
 
 
-     <div class="flexible-container">
-      <section class="info-container clearfix">
+      <div class="flexible-container">
+        <section class="info-container clearfix">
           <div class="info__picture-wrapper">
             <img class="info__picture info_left" src="images/info-pic.jpg">
           </div>
           <div class="info-wrapper info-wrapper_right">
-              <h2 class="info__headline">Обучение управлению катером, мотолодкой и гидроциклом у нас это:</h2>
-              <ul class="info__points">
-                <li class="info__point">Теоретические занятия в специально оборудованных  классах</li>
-                <li class="info__point">Практические занятия по управлению и эксплуатации катера</li>
-                <li class="info__point">Организованная сдача экзаменов</li>
-                <li class="info__point">Удостоверение на право управления маломерным судном</li>
-              </ul>
-              <p class="period">Срок обучения - 1 месяц</p>
-              <p class="price">Цена: 5000-9500 р</p>
-              <button class="button" type="button" data-action="r5mDimmer-show" data-type="question">
-                <span class="button__label">Начать обучение</span>
-              </button>
-              <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
+            <h2 class="info__headline">Обучение управлению катером, мотолодкой и гидроциклом у нас это:</h2>
+            <ul class="info__points">
+              <li class="info__point">Теоретические занятия в специально оборудованных классах</li>
+              <li class="info__point">Практические занятия по управлению и эксплуатации катера</li>
+              <li class="info__point">Организованная сдача экзаменов</li>
+              <li class="info__point">Удостоверение на право управления маломерным судном</li>
+            </ul>
+            <p class="period">Срок обучения - 1 месяц</p>
+            <p class="price">Цена: 5000-9500 р</p>
+            <button class="button" type="button" data-action="r5mDimmer-show" data-type="question">
+              <span class="button__label">Начать обучение</span>
+            </button>
+            <a class="doc-list_link" href="#">Скачать перечень необходимых документов</a>
           </div>
 
-      </section>
+        </section>
+      </div>
     </div>
-  </div>
 
 
 
 
-  <div class="body-container reasons-section">
-    <div class="flexible-container">
-      <section class="reasons clearfix">
-        <h2 class="reasons__title">4 причины, зачем нужно учиться вождению:</h2>
-        <div class="reasons-container">
-          <div class="reasons-wrapper clearfix">
-             <div class="reason">
-               <img class="reason__picture reason__picture_left" src="images/reason-1.png">
-               <p class="reason__content_left">Водительское удостоверение категории А1 Тракториста-машиниста является обязательным для управления внедорожной мототранспортной техникой.</p>
-             </div>
-             <div class="reason">
-               <img class="reason__picture reason__picture_right" src="images/reason-2.png">
-               <p class="reason__content_right">Управление квадроциклом или снегоходом без водительского удостоверения категории А1 наказывается лишением водительского удостоверения, выданного ГИБДД, и штрафом.</p>
-             </div>
-             <div class="reason">
-               <img class="reason__picture reason__picture_left" src="images/reason-3.png">
-               <p class="reason__content_left">Водительскоое удостоверение на маломерное судно обязательно для управления маломерным моторным судном (катером или лодкой с подвесным мотором), если мощность их двигателя превышает 3,68 кВт или 5л.с.</p>
-             </div>
-             <div class="reason">
-               <img class="reason__picture reason__picture_right" src="images/reason-4.png">
-               <p class="reason__content_right">Управление судном без водительского удостоверения или передача управения судном лицу, не имеющему права управления, влечет наложение администратовного штрафа в размере от десяти до пятнадцатии минимальных размеров оплаты труда.</p>
-             </div>
+    <div class="body-container reasons-section">
+      <div class="flexible-container">
+        <section class="reasons clearfix">
+          <h2 class="reasons__title">4 причины, зачем нужно учиться вождению:</h2>
+          <div class="reasons-container">
+            <div class="reasons-wrapper clearfix">
+              <div class="reason">
+                <img class="reason__picture reason__picture_left" src="images/reason-1.png">
+                <p class="reason__content_left">Водительское удостоверение категории А1 Тракториста-машиниста является обязательным для управления внедорожной мототранспортной техникой.</p>
+              </div>
+              <div class="reason">
+                <img class="reason__picture reason__picture_right" src="images/reason-2.png">
+                <p class="reason__content_right">Управление квадроциклом или снегоходом без водительского удостоверения категории А1 наказывается лишением водительского удостоверения, выданного ГИБДД, и штрафом.</p>
+              </div>
+              <div class="reason">
+                <img class="reason__picture reason__picture_left" src="images/reason-3.png">
+                <p class="reason__content_left">Водительскоое удостоверение на маломерное судно обязательно для управления маломерным моторным судном (катером или лодкой с подвесным мотором), если мощность их двигателя превышает 3,68 кВт или 5л.с.</p>
+              </div>
+              <div class="reason">
+                <img class="reason__picture reason__picture_right" src="images/reason-4.png">
+                <p class="reason__content_right">Управление судном без водительского удостоверения или передача управения судном лицу, не имеющему права управления, влечет наложение администратовного штрафа в размере от десяти до пятнадцатии минимальных размеров оплаты труда.</p>
+              </div>
+            </div>
+            <div class="reasons__warning">
+              <p class="reasons__warning__title">Остерегайтесь мошенников!</p>
+              <p class="reasons__warning__content">В последнее время участились случаи мошенничества в сфере получения прав на управление маломерными судами. Получить права ГИМС за несколько дней, без сдачи экзаменов и обучения невозможно. Вы останетесь без прав и без денег, с фальшивым
+                удостоверением на руках, что выяснится при первой же остановке и проверке инспектором ГИМС.</p>
+            </div>
           </div>
-          <div class="reasons__warning">
-            <p class="reasons__warning__title">Остерегайтесь мошенников!</p>
-            <p class="reasons__warning__content">В последнее время участились случаи мошенничества в сфере получения прав на управление маломерными судами. Получить права ГИМС за несколько дней, без сдачи экзаменов и обучения невозможно. Вы останетесь без прав и без денег, с фальшивым удостоверением на руках, что выяснится при первой же остановке и проверке инспектором ГИМС.</p>
-          </div>
-        </div>
-       </section>
-       <section class="about-container">
-           <h2 class="about__headline">О нас:</h2>
-           <p class="about__text">Высококвалифицированные преподаватели АНО ДПО "МО Центр комплексной безопасности" помогут вам подготовиться и успешно сдать экзамены в ГИМС и Гостехнадзоре. Понятные методические пособия способствуют быстрому и легкому усвоению материала, а 96% наших клиентов сдают экзамены с первой попытки.</p>
-           <p class="about__text">Индивидуальный график занятий и удобное расположение в центральном районе города помогут вам пройти обучение в кратчайшие сроки. Вы сами выберете удобную вам форму обучения, а сотрудники нашего Учебного Центра будут представлять и защищать Ваши интересы до самого последнего шага - получения прав в ГИМС или удостоверения категории А1.</p>
-           <p class="about__text">Более 300 наших клиентов уже успешно прошли обучение, сдали экзамены и получили водительские удостоверения.</p>
-       </section>
+        </section>
+        <section class="about-container">
+          <h2 class="about__headline">О нас:</h2>
+          <p class="about__text">Высококвалифицированные преподаватели АНО ДПО "МО Центр комплексной безопасности" помогут вам подготовиться и успешно сдать экзамены в ГИМС и Гостехнадзоре. Понятные методические пособия способствуют быстрому и легкому усвоению материала, а
+            96% наших клиентов сдают экзамены с первой попытки.</p>
+          <p class="about__text">Индивидуальный график занятий и удобное расположение в центральном районе города помогут вам пройти обучение в кратчайшие сроки. Вы сами выберете удобную вам форму обучения, а сотрудники нашего Учебного Центра будут представлять и защищать Ваши
+            интересы до самого последнего шага - получения прав в ГИМС или удостоверения категории А1.</p>
+          <p class="about__text">Более 300 наших клиентов уже успешно прошли обучение, сдали экзамены и получили водительские удостоверения.</p>
+        </section>
+      </div>
     </div>
-  </div>
 
-  <!-- <div class="body-container about-section">
+    <!-- <div class="body-container about-section">
     <div class="flexible-container">
       <section class="about-container">
           <h2 class="about__headline">О нас:</h2>
@@ -275,37 +272,34 @@
       </section>
     </div>
   </div> -->
-  <div class="body-container">
+    <div class="body-container">
       <div class="reviews__header">
 
         <h2 class="reviews__title">Отзывы наших учеников</h2>
-        <hr class="reviews__line"/>
+        <hr class="reviews__line" />
       </div>
       <div class="flexible-container">
-          <div class="reviews-container clearfix">
-            <div class="review__photo-container">
-              <img class="review__photo" src="images/photo.jpg" alt="Фото">
-            </div>
-            <p class="review__header">Бушуев Павел Валерьевич</p>
-            <p class="review__description">Получил права категории "А1" и удостоверение судоводителя в 2015 г.,
-                      обучаясь в "Многопрофильном образовательном центре комплексной безопасности".
-                      Организация всего учебного процесса была на отличном уровне. Отдельная благодарность преподавателю теории и практики по управлению
-                      маломерными судами и гидроциклами Першаеву Андрею Владимировичу. Материал доносит в доступной форме, легко все запоминается и сдается легко.
-                      Сотрудники Учебного Центра сопровождали и поддерживали нас и на экзаменах теоретических, и практических в Гостехнадзор, что придавало надежду
-                       и уверенность в получении прав. Обязательно буду рекомендовать этот Центр своим друзьям и знакомым.</p>
-
+        <div class="reviews-container clearfix">
+          <div class="review__photo-container">
+            <img class="review__photo" src="images/photo.jpg" alt="Фото">
           </div>
-      </div>
-  </div>
+          <p class="review__header">Бушуев Павел Валерьевич</p>
+          <p class="review__description">Получил права категории "А1" и удостоверение судоводителя в 2015 г., обучаясь в "Многопрофильном образовательном центре комплексной безопасности". Организация всего учебного процесса была на отличном уровне. Отдельная благодарность преподавателю
+            теории и практики по управлению маломерными судами и гидроциклами Першаеву Андрею Владимировичу. Материал доносит в доступной форме, легко все запоминается и сдается легко. Сотрудники Учебного Центра сопровождали и поддерживали нас и на экзаменах
+            теоретических, и практических в Гостехнадзор, что придавало надежду и уверенность в получении прав. Обязательно буду рекомендовать этот Центр своим друзьям и знакомым.</p>
 
-
-  <div class="body-container request-section">
-    <div class="flexible-container">
-      <div class="request-container clearfix">
-        <div class="request__picture-wrapper  request__picture_right">
-          <img class="request__picture" src="images/operator.jpg">
         </div>
-        <form class="request__form request__form_left r5mFeedback__form">
+      </div>
+    </div>
+
+
+    <div class="body-container request-section">
+      <div class="flexible-container">
+        <div class="request-container clearfix">
+          <div class="request__picture-wrapper  request__picture_right">
+            <img class="request__picture" src="images/operator.jpg">
+          </div>
+          <form class="request__form request__form_left r5mFeedback__form" data-metrika-goal="r5m-call-me">
             <p class="request__headline">Заполните заявку сейчас</p>
             <p class="request__subheadline">и начните обучение в удобное для Вас время</p>
             <input type="text" name="name" placeholder="Введите Ваше имя">
@@ -313,28 +307,28 @@
             <button class="request__form__button" type="submit">
               <span class="button__label">Начать </span>
             </button>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
 
     <footer class="footer">
       <div class="flexible-container">
         <div class="footer__details footer__details_left">
-            <p class="footer__contacts">АНО ДПО<br/>
-                "Многопрофильный образовательный<br/>
-                центр комплексной безопасности"<br/>
-                г.Новокузнецк, ул. Строителей 7, корп. А1</p>
-            <div class="copyright">
-                &copy; 2016
-            </div>
+          <p class="footer__contacts">АНО ДПО
+            <br/> "Многопрофильный образовательный
+            <br/> центр комплексной безопасности"
+            <br/> г.Новокузнецк, ул. Строителей 7, корп. А1</p>
+          <div class="copyright">
+            &copy; 2016
           </div>
-          <div class="footer__details footer__details_right">
-            <p class="footer__phone">+7-906-935-12-38</p>
-            <p class="footer__phone">+7-960-918-41-61</p>
-          </div>
-          <a class="footer__order__call__link" href="#" data-action="r5mDimmer-show" data-type="call">Заказать звонок</a>
+        </div>
+        <div class="footer__details footer__details_right">
+          <p class="footer__phone">+7-906-935-12-38</p>
+          <p class="footer__phone">+7-960-918-41-61</p>
+        </div>
+        <a class="footer__order__call__link" href="#" data-action="r5mDimmer-show" data-type="call">Заказать звонок</a>
         <!-- <div class="copyleft"></div>
         <div class="copyright">
           &copy; 2016
@@ -376,9 +370,10 @@
               Упс :-(
             </h2>
             <p>
-              К сожалению, ваше сообщение не было отправлено из-за ошибки.<br/>
-              Приносим извинения за доставленные неудобства<br/>
-              Пожалуйста, свяжитесь с нами <a class="r5m-dimmer__link" href="contacts.html">любым другим способом</a>,<br/>и мы с радостью ответим на все Ваши вопросы.
+              К сожалению, ваше сообщение не было отправлено из-за ошибки.
+              <br/> Приносим извинения за доставленные неудобства
+              <br/> Пожалуйста, свяжитесь с нами <a class="r5m-dimmer__link" href="contacts.html">любым другим способом</a>,
+              <br/>и мы с радостью ответим на все Ваши вопросы.
             </p>
             <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer-close" type="submit">
               Ок
@@ -389,7 +384,7 @@
         <!-- Call form -->
         <div class="r5m-dimmer-wrapper r5m-dimmer-call hidden">
           <div class="r5mFeedback">
-            <form action="/feedback" class="r5mFeedback__form">
+            <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-call-me">
               <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer-close" type="button">
                 <i class="fa fa-times"></i>
               </button>
@@ -445,6 +440,40 @@
 
 
 
+      <!-- Yandex.Metrika counter -->
+      <script type="text/javascript">
+        (function(d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+            try {
+              w.yaCounter35100450 = new Ya.Metrika({
+                id: 35100450,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+              });
+            } catch (e) {}
+          });
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() {
+              n.parentNode.insertBefore(s, n);
+            };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+            f();
+          }
+        })(document, window, "yandex_metrika_callbacks");
 
+      </script>
+      <noscript>
+        <div><img src="https://mc.yandex.ru/watch/35100450" style="position:absolute; left:-9999px;" alt="" /></div>
+      </noscript>
+      <!-- /Yandex.Metrika counter -->
   </body>
+
 </html>
