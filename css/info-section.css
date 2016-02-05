@@ -60,12 +60,12 @@
 
 
 .info__points {
-  padding: 15px 10px;
-  list-style-type: '- ';
+  padding: 15px 15px;
+  /*list-style-type: '- ';*/
 }
 
 .info__point {
-  padding: 0;
+  padding: 5px 0;
 }
 
 .period {
@@ -99,20 +99,25 @@
   margin: 0 auto 10px;
   padding: 10px 30px;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 400;
   background-color: #e8b400;
   color: #323232;
-  border-radius: 10px;
+  border-radius: 4px;
   /*box-shadow: inset 3px 3px #848484, inset -3px -3px #494949;*/
-  border-left: 4px solid #edc63b;
-  border-top: 4px solid #edc63b;
-  border-right: 4px solid #a88301;
-  border-bottom: 4px solid #a88301;
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: #edc63b;
+  border-top-color: #edc63b;
+  border-right-color: #a88301;
+  border-bottom-color: #a88301;
+
+  cursor: pointer;
   /*-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;*/
 }
 
 .info-container .button:hover {
-  cursor: pointer;
+  background-color: #e8ca00;
+  color: #373025;
 }

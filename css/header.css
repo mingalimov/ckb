@@ -28,7 +28,7 @@
 .header .flexible-container::before {
   content: '';
   display: inline-block;
-  height: 80vh;
+  height: 85vh;
   vertical-align: middle;
   margin-right: -0.25em;
 }
@@ -79,7 +79,7 @@
   margin-bottom: 40px;
   text-align: center;
   text-indent: 0;
-  text-shadow: 1px 3px 5px black, -1px -2px 4px black;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
 }
 
 .header__title__caption {
@@ -105,8 +105,13 @@
 .header__order__call__link {
   /*text-decoration-style: dashed;*/
   text-decoration: none;
-  border-bottom: 1px dashed #ffffff;
-  color: #ffffff;
+  border-bottom: 1px dashed;
+  color: inherit;
+}
+
+.header__order__call__link:hover {
+  color: #e8b400;
+  text-shadow: 0 0 1px black;
 }
 
 .header__order__call {
@@ -115,18 +120,27 @@
 }
 
 .header__order__call__button {
-  padding: 10px 25px;
+  padding: 10px 40px;
   font-family: 'Exo 2', sans-serif;
   font-size: 1.6rem;
-  font-weight: bold;
-  color: black;
-  background-color: white;
+  font-weight: 600;
+
+
+  color: #42392a;
+  background-color: #e8b400;
+
+  border-style: solid;
   border-radius: 6px;
-  /*  box-shadow: inset -4px -4px #c3c3c3;*/
-  border-left: 4px solid white;
-  border-top: 4px solid white;
-  border-bottom: 4px solid #c3c3c3;
-  border-right: 4px solid #c3c3c3;
+  border-width: 2px;
+  border-left-color: #ecc230;
+  border-top-color: #ecc230;
+  border-right-color: #cda000;
+  border-bottom-color: #cda000;
+}
+
+.header__order__call__button:hover {
+  background-color: #e8ca00;
+  color: #373025;
 }
 
 .header__order__call__button span {

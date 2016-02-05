@@ -571,7 +571,7 @@ body {
 .header .flexible-container::before {
   content: '';
   display: inline-block;
-  height: 80vh;
+  height: 85vh;
   vertical-align: middle;
   margin-right: -0.25em;
 }
@@ -614,7 +614,7 @@ body {
   margin-bottom: 40px;
   text-align: center;
   text-indent: 0;
-  text-shadow: 1px 3px 5px black, -1px -2px 4px black;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
 }
 .header__title__caption {
   
@@ -633,26 +633,35 @@ body {
 .header__order__call__link {
   
   text-decoration: none;
-  border-bottom: 1px dashed #ffffff;
-  color: #ffffff;
+  border-bottom: 1px dashed;
+  color: inherit;
+}
+.header__order__call__link:hover {
+  color: #e8b400;
+  text-shadow: 0 0 1px black;
 }
 .header__order__call {
   text-align: center;
   text-indent: 0;
 }
 .header__order__call__button {
-  padding: 10px 25px;
+  padding: 10px 40px;
   font-family: 'Exo 2', sans-serif;
   font-size: 1.6rem;
-  font-weight: bold;
-  color: black;
-  background-color: white;
+  font-weight: 600;
+  color: #42392a;
+  background-color: #e8b400;
+  border-style: solid;
   border-radius: 6px;
-  
-  border-left: 4px solid white;
-  border-top: 4px solid white;
-  border-bottom: 4px solid #c3c3c3;
-  border-right: 4px solid #c3c3c3;
+  border-width: 2px;
+  border-left-color: #ecc230;
+  border-top-color: #ecc230;
+  border-right-color: #cda000;
+  border-bottom-color: #cda000;
+}
+.header__order__call__button:hover {
+  background-color: #e8ca00;
+  color: #373025;
 }
 .header__order__call__button span {
   display: inline-block;
@@ -690,7 +699,7 @@ body {
 }
 .profit__element {
   margin: 0;
-  padding: 0 8px;
+  padding: 0 12px;
   text-indent: 0;
 }
 .profit__picture {
@@ -732,6 +741,7 @@ body {
   
   width: 40%;
   
+  
 }
 .request__picture_left {
   float: left;
@@ -748,6 +758,7 @@ body {
 }
 .request__form {
   width: 50%;
+  
   
   
   -moz-box-sizing: border-box;
@@ -789,17 +800,21 @@ body {
 }
 .request__form__button {
   margin: 10px auto 0;
-  padding: 9px 15px;
+  padding: 9px 16px;
   background-color: #e8b400;
   color: #42392a;
   
-  border-left: 4px solid #ecc230;
-  border-top: 4px solid #ecc230;
-  border-right: 4px solid #cda000;
-  border-bottom: 4px solid #cda000;
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: #ecc230;
+  border-top-color: #ecc230;
+  border-right-color: #cda000;
+  border-bottom-color: #cda000;
+  cursor: pointer;
 }
 .request__form__button:hover {
-  cursor: pointer;
+  background-color: #e8ca00;
+  color: #373025;
 }
 .request__headline,
 .request__subheadline {
@@ -866,11 +881,11 @@ body {
   font-weight: bold;
 }
 .info__points {
-  padding: 15px 10px;
-  list-style-type: '- ';
+  padding: 15px 15px;
+  
 }
 .info__point {
-  padding: 0;
+  padding: 5px 0;
 }
 .period {
   font-size: 1.2rem;
@@ -898,19 +913,23 @@ body {
   margin: 0 auto 10px;
   padding: 10px 30px;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 400;
   background-color: #e8b400;
   color: #323232;
-  border-radius: 10px;
+  border-radius: 4px;
   
-  border-left: 4px solid #edc63b;
-  border-top: 4px solid #edc63b;
-  border-right: 4px solid #a88301;
-  border-bottom: 4px solid #a88301;
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: #edc63b;
+  border-top-color: #edc63b;
+  border-right-color: #a88301;
+  border-bottom-color: #a88301;
+  cursor: pointer;
   
 }
 .info-container .button:hover {
-  cursor: pointer;
+  background-color: #e8ca00;
+  color: #373025;
 }
 .reasons-section {
   position: relative;
@@ -1020,11 +1039,13 @@ body {
   color: #2d2b2c;
 }
 .reviews__line {
-  display: block;;
+  display: block;
   position: absolute;
   top: 0;
-  margin: 15px 0;
+  margin: 1.35rem 0;
   width: 100%;
+  border: none;
+  border-top: solid 1px #ccc;
 }
 .reviews__title {
   position: relative;
@@ -1033,6 +1054,7 @@ body {
   padding: 0 20px;
   margin: 0 auto;
   background-color: white;
+  font-size: 2rem;
 }
 .reviews-container {
   width: 100%;
@@ -1048,9 +1070,9 @@ body {
   float: left;
   width: 170px;
   height: 170px;
-  padding: 5px;
+  padding: 0;
   margin-top: 5px;
-  border: 2px solid #2a2a2a;
+  border: 1px solid #ccc;
   border-radius: 5px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
