@@ -1,4 +1,4 @@
-@import 'engine.css';
+@import '../dist/engine.css';
 
 /* Imports goes here */
 @import 'fonts.css';
