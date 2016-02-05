@@ -542,6 +542,7 @@ section {
 .fade-out {
   opacity: 0;
 }
+@import 'font-awesome.css';
 body {
   font-family: "Exo 2", sans-serif;
 }
@@ -811,6 +812,12 @@ body {
   border-right-color: #cda000;
   border-bottom-color: #cda000;
   cursor: pointer;
+}
+.r5m-dimmer .r5mFeedback__close-button:hover {
+  color: #42392a;
+}
+.r5m-dimmer .r5mFeedback__submit-button {
+  border-radius: 5px;
 }
 .request__form__button:hover {
   background-color: #e8ca00;

@@ -105,6 +105,14 @@
   cursor: pointer;
 }
 
+.r5m-dimmer .r5mFeedback__close-button:hover {
+  color: #42392a;
+}
+
+.r5m-dimmer .r5mFeedback__submit-button {
+  border-radius: 5px;
+}
+
 .request__form__button:hover {
   background-color: #e8ca00;
   color: #373025;
