@@ -1,18 +1,10 @@
-/*.about-section {
-  background-color: black;
-  color: white;
-  position: relative;
-  top: -120px;
-  padding-top: 120px;
-}*/
-
 .about-container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  /*background-color: black;*/
   background: transparent;
   color: white;
+  position: relative;
 }
 
 .about__headline {
@@ -29,17 +21,69 @@
 }
 
 .about__license-wrapper {
-  width: 100%;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .about__license-container {
-  width: 33%;
-  float: left;
-  margin: 0;
+  width: 130px;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
 }
 
 .about__license {
-  height: 350px;
+  width: 100%;
   display: block;
-  margin: 0 auto;
+}
+
+.about__license__shadow {
+  cursor: pointer;
+}
+
+.about__license__loupe {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/loupe.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  -moz-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+  -ms-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  z-index: 2;
+}
+
+.about__license__shadow::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  -moz-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+  -ms-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.about__license-container:hover .about__license__shadow::after {
+  opacity: 0.5;
+}
+
+.about__license__shadow:hover .about__license__loupe {
+  opacity: 1;
 }
