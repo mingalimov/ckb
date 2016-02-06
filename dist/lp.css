@@ -783,19 +783,24 @@ body {
   background-repeat: no-repeat;
   background-position: -4% 95%;
 }
+.r5mFeedback__label-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
 .request__form input,
 .request__form__button {
   display: block;
-  width: 70%;
-  margin: 15px auto;
-  padding: 13px 15px;
-  font-size: 1.3rem;
-  text-align: center;
+  width: 100%;
+  text-align: left;
   border-style: none;
   border-radius: 4px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+.request__form__button {
+  text-align: center;
+  font-size: 1.3rem;
 }
 .request__form input {
   background-color: #ebebeb;

@@ -100,8 +100,10 @@
   <div class="body-container">
     <div class="flexible-container">
 
-      <section class="profits-container clearfix"><!--
-      --><div class="profit">
+      <section class="profits-container clearfix">
+        <!--
+      -->
+        <div class="profit">
           <figure class="profit__element">
             <img class="profit__picture" src="images/1.png" alt="Индивидуальный график" title="Индивидуальный график">
             <figcaption class="profit__text">
@@ -110,8 +112,10 @@
               <p class="profit__description">Вы сами выбираете удобное расписание занятий</p>
             </figcaption>
           </figure>
-        </div><!--
-        --><div class="profit">
+        </div>
+        <!--
+        -->
+        <div class="profit">
           <figure class="profit__element">
             <img class="profit__picture" src="images/2.png" alt="Сопровождение на экзамене" title="Сопровождение на экзамене">
             <figcaption class="profit__text">
@@ -120,8 +124,10 @@
               <p class="profit__description">Представление Ваших интересов в ГИМС и Гостехнадзоре</p>
             </figcaption>
           </figure>
-        </div><!--
-        --><div class="profit">
+        </div>
+        <!--
+        -->
+        <div class="profit">
           <figure class="profit__element">
             <img class="profit__picture" src="images/3.png" alt="Высококвалифицированные специалисты" title="Высококвалифицированные специалисты">
             <figcaption class="profit__text">
@@ -130,8 +136,10 @@
               <p class="profit__description">Гарантированная сдача экзаменов</p>
             </figcaption>
           </figure>
-        </div><!--
-        --><div class="profit">
+        </div>
+        <!--
+        -->
+        <div class="profit">
           <figure class="profit__element">
             <img class="profit__picture" src="images/4.png" alt="Удобное расположение в центре города" title="Удобное расположение в центре города">
             <figcaption class="profit__text">
@@ -155,11 +163,19 @@
         <form class="request__form request__form_right r5mFeedback__form" data-metrika-goal="r5m-call-me">
           <p class="request__headline">Заполните заявку</p>
           <p class="request__subheadline">и наши специалисты свяжутся с Вами для подбора оптимального графика обучения</p>
-          <input type="text" name="name" placeholder="Введите Ваше имя">
-          <input type="email" name="email" placeholder="Введите Ваш E-mail" required>
-          <button class="request__form__button" type="submit">
-            <span class="button__label">Отправить заявку</span>
-          </button>
+          <div class="r5mFeedback__label-wrapper">
+            <label class="r5mFeedback__label">
+              <span class="r5mFeedback__placeholder">Ваше имя*</span>
+              <input class="r5mFeedback__input" name="name" required="" type="text">
+            </label>
+            <label class="r5mFeedback__label">
+              <span class="r5mFeedback__placeholder">Телефон*</span>
+              <input class="r5mFeedback__input" name="phone" required type="text" />
+            </label>
+            <button class="request__form__button" type="submit">
+              <span class="button__label">Отправить заявку</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>
@@ -307,11 +323,19 @@
         <form class="request__form request__form_left r5mFeedback__form" data-metrika-goal="r5m-call-me">
           <p class="request__headline">Заполните заявку сейчас</p>
           <p class="request__subheadline">и начните обучение в удобное для Вас время</p>
-          <input type="text" name="name" placeholder="Введите Ваше имя">
-          <input type="email" name="email" placeholder="Введите Ваш E-mail" required>
-          <button class="request__form__button" type="submit">
-            <span class="button__label">Начать обучение</span>
-          </button>
+          <div class="r5mFeedback__label-wrapper">
+            <label class="r5mFeedback__label">
+              <span class="r5mFeedback__placeholder">Ваше имя*</span>
+              <input class="r5mFeedback__input" name="name" required="" type="text">
+            </label>
+            <label class="r5mFeedback__label">
+              <span class="r5mFeedback__placeholder">Телефон*</span>
+              <input class="r5mFeedback__input" name="phone" required type="text" />
+            </label>
+            <button class="request__form__button" type="submit">
+              <span class="button__label">Отправить заявку</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>
