@@ -1,0 +1,12 @@
+html {
+  background-image: url('../images/info-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  background: rgba(0,0,0,0.8);
+}
+
+.body-container {
+  background: #fefefe;
+}
