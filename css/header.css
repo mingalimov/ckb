@@ -105,7 +105,7 @@
   -moz-animation: imageAnimation 24s linear infinite 0s;
   -o-animation: imageAnimation 24s linear infinite 0s;
   -ms-animation: imageAnimation 24s linear infinite 0s;
-  animation: imageAnimation 18s linear infinite 0s;
+  animation: imageAnimation 24s linear infinite 0s;
 }
 
 .slideshow li:nth-child(1) span { background-image: url("../images/header.jpg");}
