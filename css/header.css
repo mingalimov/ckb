@@ -3,9 +3,9 @@
   margin: 0;
   color: #f8f8f8;
   background-color: grey;
-  background-image: url("../images/header-2.jpg");
+  /*background-image: url("../images/header.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: top;*/
 }
 
 .header {
@@ -14,6 +14,59 @@
   z-index: 1;
 }
 
+.header__background {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-animation: fadingBackground 9s ease-in 0s;
+  -moz-animation: fadingBackground 9s ease-in 0s;
+  -o-animation: fadingBackground 9s ease-in 0s;
+  -ms-animation: fadingBackground 9s ease-in 0s;
+  animation: fadingBackground 9s ease-in 0s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadingBackground {
+	0% {
+	    opacity: 1;
+	}
+	100% { opacity: 0 }
+}
+@-moz-keyframes fadingBackground {
+	0% {
+	    opacity: 1;
+	}
+	100% { opacity: 0 }
+}
+@-o-keyframes fadingBackground {
+	0% {
+	    opacity: 1;
+	}
+	100% { opacity: 0 }
+}
+@-ms-keyframes fadingBackground {
+	0% {
+	    opacity: 1;
+	}
+	100% { opacity: 0 }
+}
+@keyframes fadingBackground {
+	0% {
+	    opacity: 1;
+	}
+	100% { opacity: 0 }
+}
+
+.header {
+  position: relative;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.header__background,
 .slideshow,
 .slideshow:after {
   position: absolute;
@@ -264,8 +317,8 @@
 .header__order__call__button {
   padding: 10px 40px;
   font-family: 'Exo 2', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
 
 
   color: #42392a;
@@ -273,7 +326,7 @@
 
   border-style: solid;
   border-radius: 6px;
-  border-width: 2px;
+  border-width: 3px;
   border-left-color: #ecc230;
   border-top-color: #ecc230;
   border-right-color: #cda000;

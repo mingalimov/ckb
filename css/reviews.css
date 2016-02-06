@@ -30,7 +30,7 @@
 
 .reviews-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 30px 50px;
   color: #2d2b2c;
@@ -41,8 +41,8 @@
 
 .review__photo-container {
   float: left;
-  width: 170px;
-  height: 170px;
+  width: 200px;
+  /*height: 170px;*/
   padding: 0;
   margin-top: 5px;
   border: 1px solid #ccc;
@@ -59,7 +59,7 @@
 }
 
 .review__header {
-  margin: 0 0 10px 185px;
+  margin: 0 0 10px 235px;
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: underline;
@@ -67,6 +67,8 @@
 
 .review__description {
   margin: 0;
-  margin-left: 185px;
+  margin-left: 235px;
   text-align: justify;
+  text-indent: 2em;
+  line-height: 1.4;
 }
