@@ -317,8 +317,8 @@
 .header__order__call__button {
   padding: 10px 40px;
   font-family: 'Exo 2', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
 
 
   color: #42392a;
@@ -326,7 +326,7 @@
 
   border-style: solid;
   border-radius: 6px;
-  border-width: 2px;
+  border-width: 3px;
   border-left-color: #ecc230;
   border-top-color: #ecc230;
   border-right-color: #cda000;
