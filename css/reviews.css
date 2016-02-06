@@ -29,6 +29,7 @@
 }
 
 .reviews-container {
+  position: relative;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -71,4 +72,29 @@
   text-align: justify;
   text-indent: 2em;
   line-height: 1.4;
+}
+
+.reviews__arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -moz-transform: translateY(-50%) rotate(-45deg);
+  -o-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.reviews__arrow_left {
+  left: -14px;
+  border-top: 5px solid #231f20;
+  border-left: 5px solid #231f20;
+}
+
+.reviews__arrow_right {
+  right: -14px;
+  border-bottom: 5px solid #231f20;
+  border-right: 5px solid #231f20;
 }
