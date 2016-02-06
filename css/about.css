@@ -1,16 +1,17 @@
-.about-section {
+/*.about-section {
   background-color: black;
   color: white;
   position: relative;
   top: -120px;
   padding-top: 120px;
-}
+}*/
 
 .about-container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  background-color: black;
+  /*background-color: black;*/
+  background: transparent;
   color: white;
 }
 
@@ -25,4 +26,20 @@
 .about__text {
   text-indent: 30px;
   text-align: justify;
+}
+
+.about__license-wrapper {
+  width: 100%;
+}
+
+.about__license-container {
+  width: 33%;
+  float: left;
+  margin: 0;
+}
+
+.about__license {
+  height: 350px;
+  display: block;
+  margin: 0 auto;
 }

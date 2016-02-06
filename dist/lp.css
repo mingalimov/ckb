@@ -849,10 +849,10 @@ body {
   text-indent: 0;
 }
 .profit__picture {
-  width: 65%;
-  height: auto;
+  
+  height: 130px;
   margin: 0 auto 15px;
-  max-width: 120px;
+  max-width: 150px;
 }
 .profit__text {
   margin: 0;
@@ -861,7 +861,7 @@ body {
 .profit__headline {
   margin: 0;
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 .profit__description {
@@ -1102,9 +1102,16 @@ body {
   position: relative;
   background-color: #ebebeb;
   color: #2d2b2c;
+  background-image: url(../images/about-background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
 }
 .reasons {
   width: 100%;
+  max-width: 1100px;
+  padding: 30px 0 0 0;
+  margin: 0 auto;
   background-color: #ebebeb;
 }
 .reasons__title {
@@ -1117,7 +1124,7 @@ body {
   position: relative;
   z-index: 10;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px 0;
   background-color: white;
@@ -1125,7 +1132,7 @@ body {
   border-radius: 15px;
 }
 .reasons-wrapper {
-  margin: 0 0 20px 0;
+  margin: 0 30px 20px;
   padding: 0;
 }
 .reason {
@@ -1140,11 +1147,6 @@ body {
 }
 .reason__content_left {
   margin: 0;
-  margin-right: 100px;
-  text-align: right;
-}
-.reason__content_right {
-  margin: 0;
   margin-left: 100px;
   text-align: left;
 }
@@ -1153,9 +1155,6 @@ body {
   height: 75px;
 }
 .reason__picture_left {
-  float: right;
-}
-.reason__picture_right {
   float: left;
 }
 .reasons__warning {
@@ -1171,18 +1170,12 @@ body {
 .reasons__warning__content {
   margin: 0;
 }
-.about-section {
-  background-color: black;
-  color: white;
-  position: relative;
-  top: -120px;
-  padding-top: 120px;
-}
 .about-container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  background-color: black;
+  
+  background: transparent;
   color: white;
 }
 .about__headline {
@@ -1195,6 +1188,19 @@ body {
 .about__text {
   text-indent: 30px;
   text-align: justify;
+}
+.about__license-wrapper {
+  width: 100%;
+}
+.about__license-container {
+  width: 33%;
+  float: left;
+  margin: 0;
+}
+.about__license {
+  height: 350px;
+  display: block;
+  margin: 0 auto;
 }
 .reviews__header {
   margin: 0;
