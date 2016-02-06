@@ -196,6 +196,7 @@
 
 
   <div class="body-container reasons-section">
+    <div class="reasons__shadow"></div>
     <div class="flexible-container">
       <section class="reasons clearfix">
         <h2 class="reasons__title">4 причины, зачем нужно учиться вождению:</h2>
@@ -238,29 +239,37 @@
         </p>
         <div class="about__license-wrapper clearfix">
           <div class="about__license-container">
-            <img class="about__license" src="images/lic-1.jpg"></div>
+            <div class="about__license__shadow">
+              <div class="about__license__loupe"></div>
+              <a href="#">
+                <img class="about__license" src="images/lic-1.jpg">
+              </a>
+            </div>
+          </div>
           <div class="about__license-container">
-            <img class="about__license" src="images/lic-2.jpg"></div>
+            <div class="about__license__shadow">
+              <div class="about__license__loupe"></div>
+              <a href="#">
+                <img class="about__license" src="images/lic-2.jpg">
+              </a>
+            </div>
+          </div>
           <div class="about__license-container">
-            <img class="about__license" src="images/lic-3.jpg"></div>
+            <div class="about__license__shadow">
+              <div class="about__license__loupe"></div>
+              <a href="#">
+                <img class="about__license" src="images/lic-3.jpg">
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   </div>
 
-  <!-- <div class="body-container about-section">
-    <div class="flexible-container">
-      <section class="about-container">
-          <h2 class="about__headline">О нас:</h2>
-          <p class="about__text">Высококвалифицированные преподаватели АНО ДПО "МО Центр комплексной безопасности" помогут вам подготовиться и успешно сдать экзамены в ГИМС и Гостехнадзоре. Понятные методические пособия способствуют быстрому и легкому усвоению материала, а 96% наших клиентов сдают экзамены с первой попытки.</p>
-          <p class="about__text">Индивидуальный график занятий и удобное расположение в центральном районе города помогут вам пройти обучение в кратчайшие сроки. Вы сами выберете удобную вам форму обучения, а сотрудники нашего Учебного Центра будут представлять и защищать Ваши интересы до самого последнего шага - получения прав в ГИМС или удостоверения категории А1.</p>
-          <p class="about__text">Более 300 наших клиентов уже успешно прошли обучение, сдали экзамены и получили водительские удостоверения.</p>
-      </section>
-    </div>
-  </div> -->
+
   <div class="body-container">
     <div class="reviews__header">
-
       <h2 class="reviews__title">Отзывы наших учеников</h2>
       <hr class="reviews__line" />
     </div>
@@ -270,14 +279,10 @@
           <img class="review__photo" src="images/photo.jpg" alt="Фото">
         </div>
         <p class="review__header">Бушуев Павел Валерьевич</p>
-        <p class="review__description">
-          Получил права категории &laquo;А1&raquo; и удостоверение судоводителя в 2015 г., обучаясь в &laquo;Многопрофильном образовательном центре комплексной безопасности&raquo;. Организация всего учебного процесса была <b>на отличном уровне</b>. Отдельная
-          благодарность преподавателю теории и практики по управлению маломерными судами и гидроциклами Першаеву Андрею Владимировичу. Материал доносит в доступной форме, легко все запоминается и сдается легко.
-        </p>
-        <p class="review__description">
-          Сотрудники Учебного Центра <b>сопровождали</b> и <b>поддерживали</b> нас и на экзаменах теоретических, и практических в Гостехнадзор, что <b>придавало</b> надежду и <b>уверенность</b> в получении прав.
-          Обязательно буду рекомендовать этот Центр своим друзьям и знакомым.
-        </p>
+        <p class="review__description">Получил права категории &laquo;А1&raquo; и удостоверение судоводителя в 2015 г., обучаясь в &laquo;Многопрофильном образовательном центре комплексной безопасности&raquo;. Организация всего учебного процесса была на отличном уровне. Отдельная благодарность
+          преподавателю теории и практики по управлению маломерными судами и гидроциклами Першаеву Андрею Владимировичу. Материал доносит в доступной форме, легко все запоминается и сдается легко. Сотрудники Учебного Центра сопровождали и поддерживали
+          нас и на экзаменах теоретических, и практических в Гостехнадзор, что придавало надежду и уверенность в получении прав. Обязательно буду рекомендовать этот Центр своим друзьям и знакомым.</p>
+
       </div>
     </div>
   </div>
@@ -446,7 +451,7 @@
     window.r5m = {
       FEEDBACK_SERVICE: 'emailjs',
       // FEEDBACK_SERVICE: 'formspree',
-      modules: ['feedback', 'r5mDimmer', 'carousel', 'gallery']
+      modules : ['feedback', 'r5mDimmer', 'carousel', 'gallery']
     };
 
     require.config({
@@ -469,8 +474,8 @@
       });
     });
 
-    (function() {
-      emailjs.init("user_WMEfPtpoUCx0quYXbefJf");
+    (function(){
+       emailjs.init("user_WMEfPtpoUCx0quYXbefJf");
     })();
   </script>
   <script>
