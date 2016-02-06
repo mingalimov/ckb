@@ -1,0 +1,33 @@
+@media screen and (max-width: 600px) {
+  .profits-container {
+    padding: 20px 0;
+  }
+
+  .profit__element {
+    padding: 0
+  }
+
+  .profit__picture {
+    float: left;
+    max-width: 60px;
+    height: auto;
+  }
+
+  .profit__text {
+    text-align: left;
+    margin-left: 75px;
+  }
+
+  .profit__headline {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .profit {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+
+}
