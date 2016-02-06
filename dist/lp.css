@@ -119,12 +119,14 @@ section {
   color: #99999a;
   font-size: 20px;
   cursor: text;
+  line-height: 30px;
 }
 .r5mFeedback__placeholder-top {
   top: 1px;
   font-size: 14px;
   color: #666;
   cursor: initial;
+  line-height: 20px;
 }
 .r5mFeedback__input-with-modern-placeholder {
   padding: 19px 15px 5px 15px;
@@ -813,7 +815,8 @@ body {
   cursor: pointer;
 }
 .r5m-dimmer .r5mFeedback__close-button {
-  top: 12px;
+  top: 1rem;
+  line-height: 1rem;
 }
 .r5m-dimmer .r5mFeedback__close-button:hover {
   color: #42392a;

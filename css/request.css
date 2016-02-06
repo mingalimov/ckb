@@ -106,7 +106,8 @@
 }
 
 .r5m-dimmer .r5mFeedback__close-button {
-  top: 12px;
+  top: 1rem;
+  line-height: 1rem;
 }
 
 .r5m-dimmer .r5mFeedback__close-button:hover {
