@@ -97,6 +97,10 @@
   border: solid 1px #ccc;
 }
 
+.request__form input:focus {
+  background: #fefefe;
+}
+
 .request__form__button {
   text-align: center;
   font-size: 1.3rem;
