@@ -16,8 +16,11 @@ body {
   padding: 0;
   min-width: 900px;
 }
+body.with-dimmer {
+  overflow: hidden;
+}
 .is-hidden {
-  display: none;
+  display: none!important;
 }
 section h2 {
   font-size: 1.5rem;
@@ -145,6 +148,7 @@ section {
   -moz-border-radius: 5px;
   border-radius: 5px;
   width: 300px;
+  position: relative;
 }
 .r5m-dimmer .r5mFeedback__form {
   margin: 0;
@@ -270,6 +274,7 @@ section {
 .r5m-dimmer {
   background-color: rgba(10%, 10%, 10%, 0.75);
   z-index: 10;
+  overflow: auto;
 }
 .r5m-dimmer {
   position: fixed;
@@ -279,7 +284,6 @@ section {
   height: 0;
   opacity: 0;
   
-  overflow: hidden;
   
   -webkit-transition: opacity 0.5s 0s, height 0.1s 0.5s;
   -moz-transition: opacity 0.5s 0s, height 0.1s 0.5s;
@@ -298,15 +302,20 @@ section {
   -ms-transition: opacity 0.5s 0.1s, height 0.1s 0s;
   transition: opacity 0.5s 0.1s, height 0.1s 0s;
 }
+.r5m-dimmer-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
 .r5m-dimmer__container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  text-align: center;
+  position: relative;
+}
+.r5m-dimmer__container::before {
+  content: '';
+  display: inline-block;
+  height: 100vh;
+  vertical-align: middle;
+  margin-right: -0.25em;
 }
 .r5m-dimmer__link {
   color: white;
