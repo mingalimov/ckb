@@ -16,11 +16,6 @@ body {
   padding: 0;
   min-width: 900px;
 }
-body {
-  background: url(../images/whatis.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 .is-hidden {
   display: none;
 }
@@ -553,11 +548,12 @@ body {
   margin: 0;
   color: #f8f8f8;
   background-color: grey;
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/header-2.jpg);
   background-size: cover;
+  background-position: center;
 }
 .header {
-  background: rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.5);
 }
 .header-container {
   padding: 20px 20px 100px;
@@ -815,6 +811,9 @@ body {
   border-right-color: #cda000;
   border-bottom-color: #cda000;
   cursor: pointer;
+}
+.r5m-dimmer .r5mFeedback__close-button {
+  top: 12px;
 }
 .r5m-dimmer .r5mFeedback__close-button:hover {
   color: #42392a;

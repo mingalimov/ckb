@@ -105,6 +105,10 @@
   cursor: pointer;
 }
 
+.r5m-dimmer .r5mFeedback__close-button {
+  top: 12px;
+}
+
 .r5m-dimmer .r5mFeedback__close-button:hover {
   color: #42392a;
 }
