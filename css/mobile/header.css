@@ -1,0 +1,48 @@
+@media screen and (max-width: 600px) {
+  .header-container {
+    display: block;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+
+  .header .flexible-container::before {
+    height: auto;
+    display: none;
+  }
+
+  .header__top-container {
+    position: static;
+  }
+
+  .header__logo-wrapper, .header__order-wrapper {
+    float: none;
+    text-align: left;
+  }
+
+  .header__logo-title {
+    margin: 0;
+  }
+
+  .header__title {
+    margin: 0;
+  }
+
+  .header__title__caption {
+      font-size: 1.5rem;
+  }
+
+  .header__title__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .header__order__call__button {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+
+  .slideshow {
+    display: none;
+  }
+}

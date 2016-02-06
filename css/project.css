@@ -12,3 +12,8 @@
 @import 'about.css';
 @import 'reviews.css';
 @import 'footer.css';
+
+@import 'mobile/common.css';
+@import 'mobile/header.css';
+@import 'mobile/profits.css';
+@import 'mobile/request.css';
