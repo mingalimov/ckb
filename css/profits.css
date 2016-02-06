@@ -36,10 +36,10 @@
 }
 
 .profit__picture {
-  width: 65%;
-  height: auto;
+  /*width: auto;*/
+  height: 130px;
   margin: 0 auto 15px;
-  max-width: 120px;
+  max-width: 150px;
 }
 
 .profit__text {
@@ -50,7 +50,7 @@
 .profit__headline {
   margin: 0;
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
