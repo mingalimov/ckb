@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  .r5m-dimmer__container::before {
+
+  }
+
+  .r5m-dimmer .r5mFeedback__submit-button, .r5m-dimmer .r5mFeedback {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}

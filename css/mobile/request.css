@@ -7,7 +7,7 @@
     width: 100%;
   }
 
-  .request__form_right {
+  .request__form_right, .request__form_left {
       padding: 20px;
       margin: 0;
       background-image: none;
