@@ -1,0 +1,27 @@
+@media screen and (max-width: 600px) {
+  .reviews__header {
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .reviews__line {
+    display: none;
+  }
+
+  .reviews-container {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .review__photo-container {
+    max-width: 120px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .review__description, .review__header {
+    margin: 0;
+  }
+
+}

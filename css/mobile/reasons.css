@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+  .reasons-section {
+    background-image: none;
+    background-color: #ebebeb;
+  }
+
+  .reasons__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .reasons-container {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .reasons-wrapper {
+    margin: 0;
+  }
+
+  .reason {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .reason__picture {
+    max-width: 60px;
+    height: auto;
+  }
+
+  .reason__content_left {
+    margin-left: 75px;
+  }
+
+  .reasons__warning {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid red;
+  }
+
+  .about-container {
+    color: #2d2b2c;
+    text-align: left;
+  }
+
+  .about__license-container {
+    width: 100%;
+    float: none;
+  }
+
+}
