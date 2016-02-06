@@ -18,11 +18,11 @@
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: top;
-  -webkit-animation: fadingBackground 6s ease-in 0s;
-  -moz-animation: fadingBackground 6s ease-in 0s;
-  -o-animation: fadingBackground 6s ease-in 0s;
-  -ms-animation: fadingBackground 6s ease-in 0s;
-  animation: fadingBackground 6s ease-in 0s;
+  -webkit-animation: fadingBackground 8s ease-in 0s;
+  -moz-animation: fadingBackground 8s ease-in 0s;
+  -o-animation: fadingBackground 8s ease-in 0s;
+  -ms-animation: fadingBackground 8s ease-in 0s;
+  animation: fadingBackground 8s ease-in 0s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;

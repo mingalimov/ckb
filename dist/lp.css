@@ -6,7 +6,7 @@
 .flexible-container {
   min-width: 800px;
   max-width: 1400px;
-
+  
   margin: auto;
   padding: 0 50px;
 }
@@ -89,9 +89,9 @@ section {
   display: block;
   position: relative;
   margin-bottom: 10px;
-
+  
   padding: 12px;
-
+  
   font-size: 20px;
   width: 100%;
   color: #252525;
@@ -136,10 +136,10 @@ section {
 }
 .r5m-dimmer .r5mFeedback {
   display: block;
-
-
-
-
+  
+  
+  
+  
   margin: auto;
   padding: 15px;
   text-align: center;
@@ -167,9 +167,9 @@ section {
   display: block;
   position: relative;
   margin-bottom: 10px;
-
+  
   padding: 12px;
-
+  
   font-size: 20px;
   width: 100%;
   color: #252525;
@@ -291,8 +291,8 @@ section {
   top: 0;
   height: 0;
   opacity: 0;
-
-
+  
+  
   -webkit-transition: opacity 0.5s 0s, height 0.1s 0.5s;
   -moz-transition: opacity 0.5s 0s, height 0.1s 0.5s;
   -o-transition: opacity 0.5s 0s, height 0.1s 0.5s;
@@ -300,8 +300,8 @@ section {
   transition: opacity 0.5s 0s, height 0.1s 0.5s;
 }
 .r5m-dimmer-active {
-
-
+  
+  
   height: 100%;
   opacity: 1;
   -webkit-transition: opacity 0.5s 0.1s, height 0.1s 0s;
@@ -581,7 +581,7 @@ body {
   margin: 0;
   color: #f8f8f8;
   background-color: grey;
-
+  
 }
 .header {
   position: relative;
@@ -592,11 +592,11 @@ body {
   background-image: url(../images/header.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-animation: fadingBackground 6s ease-in 0s;
-  -moz-animation: fadingBackground 6s ease-in 0s;
-  -o-animation: fadingBackground 6s ease-in 0s;
-  -ms-animation: fadingBackground 6s ease-in 0s;
-  animation: fadingBackground 6s ease-in 0s;
+  -webkit-animation: fadingBackground 8s ease-in 0s;
+  -moz-animation: fadingBackground 8s ease-in 0s;
+  -o-animation: fadingBackground 8s ease-in 0s;
+  -ms-animation: fadingBackground 8s ease-in 0s;
+  animation: fadingBackground 8s ease-in 0s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
@@ -663,7 +663,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-
+  
   color: transparent;
   background-size: cover;
   background-position: top;
@@ -674,7 +674,7 @@ body {
   -moz-animation: imageAnimation 24s linear infinite 0s;
   -o-animation: imageAnimation 24s linear infinite 0s;
   -ms-animation: imageAnimation 24s linear infinite 0s;
-  animation: imageAnimation 18s linear infinite 0s;
+  animation: imageAnimation 24s linear infinite 0s;
 }
 .slideshow li:nth-child(1) span { background-image: url(../images/header.jpg);}
 .slideshow li:nth-child(2) span {
@@ -778,7 +778,7 @@ body {
 }
 .header-container {
   padding: 20px 20px 100px;
-
+  
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -826,7 +826,7 @@ body {
 }
 .header__order-wrapper {
   float: right;
-
+  
   text-align: right;
 }
 .header__title {
@@ -838,21 +838,21 @@ body {
   text-shadow: 1px 1px 1px black, -1px -1px 1px black;
 }
 .header__title__caption {
-
+  
 }
 .header__title__caption a {
   text-decoration: none;
   color: #ffffff;
 }
 .header__title__subtitle {
-
+  
   font-weight: 400;
 }
 .header__order__phone {
   margin: 0 15px 0 0;
 }
 .header__order__call__link {
-
+  
   text-decoration: none;
   border-bottom: 1px dashed;
   color: inherit;
@@ -900,7 +900,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 50px 30px 30px;
-
+  
   color: #000000;
   background-color: #ffffff;
   -moz-box-sizing: border-box;
@@ -924,7 +924,7 @@ body {
   text-indent: 0;
 }
 .profit__picture {
-
+  
   height: 100px;
   margin: 0 auto 15px;
   max-width: 150px;
@@ -950,7 +950,7 @@ body {
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
-
+  
   border-radius: 15px;
   background-color: #ffffff;
   -moz-box-sizing: border-box;
@@ -959,10 +959,10 @@ body {
   overflow: hidden;
 }
 .request__picture-wrapper {
-
+  
   width: 40%;
-
-
+  
+  
 }
 .request__picture_left {
   float: left;
@@ -979,14 +979,14 @@ body {
 }
 .request__form {
   width: 50%;
-
-
-
+  
+  
+  
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
-
+  
 }
 .request__form_right {
   margin-left: 45%;
@@ -994,7 +994,7 @@ body {
   background-image: url(../images/arrow.png);
   background-repeat: no-repeat;
   background-position: 104% 90%;
-
+  
   background-position: left 104% bottom 20px;
 }
 .request__form_left {
@@ -1038,7 +1038,7 @@ body {
   padding: 9px 16px;
   background-color: #e8b400;
   color: #42392a;
-
+  
   border-width: 2px;
   border-style: solid;
   border-left-color: #ecc230;
@@ -1077,7 +1077,7 @@ body {
   text-indent: 10px;
 }
 .info-container-wrapper {
-
+  
   padding: 20px 0;
 }
 .info-section {
@@ -1092,7 +1092,7 @@ body {
   color: #f8f8f8;
   background: transparent;
   border: none;
-
+  
   border-radius: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1100,14 +1100,14 @@ body {
 }
 .info-wrapper {
   text-align: center;
-
+  
 }
 .info-wrapper_left {
-
+  
   margin-right: 46%;
 }
 .info-wrapper_right {
-
+  
   margin-left: 50%;
 }
 .info_left {
@@ -1137,7 +1137,7 @@ body {
 }
 .info__points {
   padding: 15px 15px;
-
+  
 }
 .info__point {
   padding: 5px 0;
@@ -1151,7 +1151,7 @@ body {
   font-weight: 600;
 }
 .info__picture-wrapper {
-
+  
   width: 45%;
   padding: 5px 5px 2px 5px;
   border: solid 1px #999;
@@ -1160,7 +1160,7 @@ body {
 .info__picture {
   width: 100%;
   border-radius: 5px;
-
+  
 }
 .doc-list_link {
   display: inline-block;
@@ -1176,7 +1176,7 @@ body {
   background-color: #e8b400;
   color: #323232;
   border-radius: 4px;
-
+  
   border-width: 2px;
   border-style: solid;
   border-left-color: #edc63b;
@@ -1184,7 +1184,7 @@ body {
   border-right-color: #a88301;
   border-bottom-color: #a88301;
   cursor: pointer;
-
+  
 }
 .info-container .button:hover {
   background-color: #e8ca00;
@@ -1250,7 +1250,7 @@ body {
   text-align: left;
 }
 .reason__picture {
-
+  
   height: 75px;
 }
 .reason__picture_left {
@@ -1389,7 +1389,7 @@ body {
 .review__photo-container {
   float: left;
   width: 200px;
-
+  
   padding: 0;
   margin: 5px 20px 10px 0;
   border: 1px solid #ccc;
@@ -1411,7 +1411,7 @@ body {
 }
 .review__description {
   margin: 0;
-
+  
   text-align: justify;
   text-indent: 2em;
   line-height: 1.4;
@@ -1454,13 +1454,12 @@ body {
   padding-top: 55px;
   padding-bottom: 10px;
 }
-
 .footer-container {
   width: 100%;
 }
 .footer__details {
   display: block;
-
+  
   color: #2b2a29;
 }
 .footer__details_left {
