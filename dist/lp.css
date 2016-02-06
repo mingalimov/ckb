@@ -207,6 +207,11 @@ section {
   background: #fefefe;
   color: #1f1b20;
 }
+.r5m-dimmer .r5mFeedback__submit-button:disabled {
+  background: #ccc;
+  color: #666;
+  border-color: #666;
+}
 .r5m-dimmer .r5mFeedback__close-button {
   display: none;
 }
@@ -332,6 +337,8 @@ section {
   border: solid 1px #dedede;
   border-radius: 4px;
   background: transparent;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 .r5m-dimmer-thanks__button:hover {
   background: #dedede;
@@ -566,7 +573,7 @@ body {
 }
 .header {
   position: relative;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   z-index: 1;
 }
 .slideshow,
