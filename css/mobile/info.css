@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px) {
+  .info-section {
+    background: white;
+  }
+
+
+  .info-container {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 15px;
+  }
+
+  .info__picture-wrapper {
+    display: none;
+  }
+
+  .info-wrapper {
+    margin: 0;
+  }
+
+}
