@@ -1447,9 +1447,6 @@ body {
     box-sizing: border-box;
     padding: 0 15px;
   }
-  .about__license-container {
-    float: none;
-  }
 }
 @media screen and (max-width: 600px) {
   .header-container {
@@ -1483,9 +1480,6 @@ body {
   .header__order__call__button {
     padding: 10px 0;
     width: 100%;
-  }
-  .slideshow {
-    display: none;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1521,12 +1515,127 @@ body {
   .request__form {
     width: 100%;
   }
-  .request__form_right {
+  .request__form_right, .request__form_left {
       padding: 20px;
       margin: 0;
       background-image: none;
   }
   .r5mFeedback__label-wrapper {
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info-section {
+  }
+  .info-container {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 15px;
+  }
+  .info__picture-wrapper {
+    display: none;
+  }
+  .info-wrapper {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .reasons-section {
+    background-image: none;
+    background-color: #ebebeb;
+  }
+  .reasons__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  .reasons-container {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+  }
+  .reasons-wrapper {
+    margin: 0;
+  }
+  .reason {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .reason__picture {
+    max-width: 60px;
+    height: auto;
+  }
+  .reason__content_left {
+    margin-left: 75px;
+  }
+  .reasons__warning {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid red;
+  }
+  .about-container {
+    color: #2d2b2c;
+    text-align: left;
+  }
+  .about__license-container {
+    width: 100%;
+    float: none;
+    margin: 10px 0;
+  }
+  .about__license-wrapper {
+    margin-top: 10px;
+  }
+  .reasons__shadow {
+    background: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .reviews__header {
+    height: auto;
+    margin: 20px auto;
+  }
+  .reviews__line {
+    display: none;
+  }
+  .reviews-container {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .review__photo-container {
+    max-width: 120px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .review__description, .review__header {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 20px 0;
+  }
+  .footer__details_left {
+    float: none;
+  }
+  .footer__details_right {
+    float: none;
+    text-align: left;
+  }
+  .footer__order__call__link {
+    float: none;
+    display: inline;
+  }
+}
+@media screen and (max-width: 600px) {
+  .r5m-dimmer__container::before {
+  }
+  .r5m-dimmer .r5mFeedback__submit-button, .r5m-dimmer .r5mFeedback {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
