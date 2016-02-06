@@ -1,11 +1,20 @@
-.footer-container {
-  width: 100%;
+.footer {
+  background-image: url("../images/footer-top.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 50px;
+  padding-top: 55px;
+  padding-bottom: 10px;
 }
+
+/*.footer-container {
+  width: 100%;
+}*/
 
 .footer__details {
   display: block;
   /*width: 40%;*/
-  color: #636363;
+  color: #2b2a29;
 }
 
 .footer__details_left {
@@ -31,7 +40,7 @@
   float: right;
   clear: right;
   margin-top: 20px;
-  color: #636363;
+  color: #2b2a29;
   text-decoration: none;
-  border-bottom: 1px dashed #636363;
+  border-bottom: 1px dashed #2b2a29;
 }
