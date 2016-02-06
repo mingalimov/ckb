@@ -1575,6 +1575,13 @@ body {
   .about__license-container {
     width: 100%;
     float: none;
+    margin: 10px 0;
+  }
+  .about__license-wrapper {
+    margin-top: 10px;
+  }
+  .reasons__shadow {
+    background: none;
   }
 }
 @media screen and (max-width: 600px) {
