@@ -12,43 +12,6 @@
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
   <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
   <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,700,600&subset=cyrillic" rel="stylesheet" type="text/css">
-
-  <!-- App init script -->
-  <script src="./dist/require.js"></script>
-  <script>
-    window.r5mModules = ['feedback', 'r5mDimmer', 'carousel', 'gallery'];
-    var isDebug = ~location.search.indexOf("debug=1");
-
-    require.config({
-      baseUrl: './',
-      packages: [{
-        name: "r5m",
-        main: "index",
-        location: "bower_components/r5m-cms/js"
-      }, {
-        name: "vendor",
-        location: "bower_components/"
-      }]
-    });
-
-    require([isDebug ? 'r5m' : 'dist/lp'], function() {
-      require([
-        'r5m/app'
-      ], function(app) {
-        app(window.r5mModules);
-      });
-    });
-  </script>
-  <script>
-    //Яндекс.Метрика счетчик для отлавливания целей.
-    window.onload = function() {
-      if (!window.r5m) window.r5m = {};
-      window.r5m.Yandex = {
-        counterId: '35100450',
-        defaultGoal: "r5m-call-me"
-      };
-    }
-  </script>
 </head>
 
 <body>
@@ -89,7 +52,7 @@
           </h2>
           </div>
           <p class="header__order__call">
-            <button class="header__order__call__button r5m-action" data-action="r5mDimmer-show" data-type="question">
+            <button class="header__order__call__button submit-button r5m-action" data-action="r5mDimmer-show" data-type="question">
               <span>Начать обучение</span>
             </button>
           </p>
@@ -168,7 +131,7 @@
               <span class="r5mFeedback__placeholder">Телефон*</span>
               <input class="r5mFeedback__input" name="phone" required type="text" />
             </label>
-            <button class="request__form__button" type="submit">
+            <button class="request__form__button submit-button " type="submit">
               <span class="button__label">Отправить заявку</span>
             </button>
           </div>
@@ -328,7 +291,7 @@
               <span class="r5mFeedback__placeholder">Телефон*</span>
               <input class="r5mFeedback__input" name="phone" required type="text" />
             </label>
-            <button class="request__form__button" type="submit">
+            <button class="request__form__button submit-button " type="submit">
               <span class="button__label">Отправить заявку</span>
             </button>
           </div>
@@ -375,10 +338,11 @@
       <div class="r5m-dimmer-wrapper r5m-dimmer-thanks hidden">
         <form onsubmit="return false;">
           <h2>
-              Спасибо!
-            </h2>
+            Спасибо!
+          </h2>
           <p>
-            Мы свяжемся с Вами по указанному
+            Ваша заявка принята.
+            <br/>Мы свяжемся с Вами по указанному
             <br/>Email-адресу или телефону
             <br/>в ближайшее время.
           </p>
@@ -392,8 +356,8 @@
       <div class="r5m-dimmer-wrapper r5m-dimmer-oops hidden">
         <form onsubmit="return false;">
           <h2>
-              Упс :-(
-            </h2>
+            Ой! Вот ведь незадача.
+          </h2>
           <p>
             К сожалению, ваше сообщение не было отправлено из-за ошибки.
             <br/> Приносим извинения за доставленные неудобства
@@ -422,7 +386,7 @@
               <span class="r5mFeedback__placeholder">Телефон*</span>
               <input class="r5mFeedback__input" name="phone" required type="text" />
             </label>
-            <button class="r5mFeedback__submit-button" type="submit">
+            <button class="r5mFeedback__submit-button submit-button " type="submit">
               Заказать звонок
             </button>
           </form>
@@ -453,7 +417,7 @@
               <span class="r5mFeedback__placeholder">Вопросы или комментарии</span>
               <textarea class="r5mFeedback__text" name="text"></textarea>
             </label>
-            <button class="r5mFeedback__submit-button" type="submit">
+            <button class="r5mFeedback__submit-button submit-button " type="submit">
               Оставить заявку
             </button>
           </form>
@@ -463,13 +427,52 @@
   </div>
 
 
-
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="text/javascript">
-     (function(){
-        emailjs.init("user_WMEfPtpoUCx0quYXbefJf");
-     })();
+  <!-- App init script -->
+  <script src="./dist/require.js"></script>
+  <script>
+    var isDebug = ~location.search.indexOf("debug=1");
+
+    window.r5m = {
+      FEEDBACK_SERVICE: 'emailjs',
+      modules : ['feedback', 'r5mDimmer', 'carousel', 'gallery']
+    };
+
+    require.config({
+      baseUrl: './',
+      packages: [{
+        name: "r5m",
+        main: "index",
+        location: "bower_components/r5m-cms/js"
+      }, {
+        name: "vendor",
+        location: "bower_components/"
+      }]
+    });
+
+    require([isDebug ? 'r5m' : 'dist/lp'], function() {
+      require([
+        'r5m/app'
+      ], function(app) {
+        app(window.r5m.modules);
+      });
+    });
+
+    (function(){
+       emailjs.init("user_WMEfPtpoUCx0quYXbefJf");
+    })();
   </script>
+  <script>
+    //Яндекс.Метрика счетчик для отлавливания целей.
+    window.onload = function() {
+      if (!window.r5m) window.r5m = {};
+      window.r5m.Yandex = {
+        counterId: '35100450',
+        defaultGoal: "r5m-call-me"
+      };
+    }
+  </script>
+
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function(d, w, c) {
