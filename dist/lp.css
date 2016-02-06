@@ -558,6 +558,17 @@ section {
 .fade-out {
   opacity: 0;
 }
+html {
+  background-image: url(../images/info-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  background: rgba(0,0,0,0.8);
+}
+.body-container {
+  background: #fefefe;
+}
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -659,20 +670,20 @@ body {
   background-repeat: none;
   opacity: 0;
   z-index: 0;
-  -webkit-animation: imageAnimation 18s linear infinite 0s;
-  -moz-animation: imageAnimation 18s linear infinite 0s;
-  -o-animation: imageAnimation 18s linear infinite 0s;
-  -ms-animation: imageAnimation 18s linear infinite 0s;
+  -webkit-animation: imageAnimation 24s linear infinite 0s;
+  -moz-animation: imageAnimation 24s linear infinite 0s;
+  -o-animation: imageAnimation 24s linear infinite 0s;
+  -ms-animation: imageAnimation 24s linear infinite 0s;
   animation: imageAnimation 18s linear infinite 0s;
 }
 .slideshow li:nth-child(1) span { background-image: url(../images/header.jpg);}
 .slideshow li:nth-child(2) span {
   background-image: url(../images/header-2.jpg);
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  -o-animation-delay: 6s;
-  -ms-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  -o-animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  animation-delay: 8s;
 }
 .slideshow li:nth-child(2) span::before,
 .slideshow li:nth-child(3) span::before {
@@ -684,11 +695,11 @@ body {
 .slideshow li:nth-child(3) span {
   background-image: url(../images/header-31.jpg);
   background-position: 70% 75%;
-  -webkit-animation-delay: 12s;
-  -moz-animation-delay: 12s;
-  -o-animation-delay: 12s;
-  -ms-animation-delay: 12s;
-  animation-delay: 12s;
+  -webkit-animation-delay: 16s;
+  -moz-animation-delay: 16s;
+  -o-animation-delay: 16s;
+  -ms-animation-delay: 16s;
+  animation-delay: 16s;
 }
 @-webkit-keyframes imageAnimation {
   0% {
@@ -937,7 +948,7 @@ body {
 }
 .request-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
   
   border-radius: 15px;
@@ -1066,12 +1077,11 @@ body {
   text-indent: 10px;
 }
 .info-container-wrapper {
-  background: rgba(0,0,0,0.8);
+  
   padding: 20px 0;
 }
 .info-section {
-  background-image: url(../images/info-bg.jpg);
-  background-size: cover;
+  background: transparent;
 }
 .info-container {
   position: relative;
@@ -1340,8 +1350,8 @@ body {
 }
 .reviews__header {
   margin: 0;
-  margin-top: 30px;
   padding: 0;
+  padding-top: 30px;
   position: relative;
   height: 30px;
   text-align: center;
@@ -1350,7 +1360,7 @@ body {
 .reviews__line {
   display: block;
   position: absolute;
-  top: 0;
+  top: 30px;
   margin: 1.35rem 0;
   width: 100%;
   border: none;
@@ -1436,12 +1446,19 @@ body {
   padding: 0 70px;
 }
 .footer {
+<<<<<<< HEAD
   background-image: url(../images/footer-top.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 50px;
   padding-top: 55px;
   padding-bottom: 10px;
+=======
+  background: #fefefe;
+}
+.footer-container {
+  width: 100%;
+>>>>>>> df4ff80622aae2ee6e927451a780679ce486dc2b
 }
 .footer__details {
   display: block;

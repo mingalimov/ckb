@@ -1,10 +1,10 @@
 .info-container-wrapper {
-  background: rgba(0,0,0,0.8);
+  
   padding: 20px 0;
 }
 .info-section {
-  background-image: url('../images/info-bg.jpg');
-  background-size: cover;
+  background: transparent;
+
 }
 
 .info-container {
