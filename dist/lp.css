@@ -574,7 +574,7 @@ body {
 }
 .header {
   position: relative;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.5);
   z-index: 1;
 }
 .header__background {
@@ -623,7 +623,6 @@ body {
 }
 .header {
   position: relative;
-  background: rgba(0,0,0,0.6);
   z-index: 1;
 }
 .header__background,
@@ -674,6 +673,13 @@ body {
   -o-animation-delay: 9s;
   -ms-animation-delay: 9s;
   animation-delay: 9s;
+}
+.slideshow li:nth-child(2) span::before,
+.slideshow li:nth-child(3) span::before {
+  content: " ";
+  display: block;
+  position: absolute;top: 0; right: 0; left: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .slideshow li:nth-child(3) span {
   background-image: url(../images/header-31.jpg);
