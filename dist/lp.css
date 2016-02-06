@@ -774,14 +774,17 @@ body {
   padding: 20px 30px 20px 0;
   background-image: url(../images/arrow.png);
   background-repeat: no-repeat;
-  background-position: 104% 95%;
+  background-position: 104% 90%;
+  
+  background-position: left 104% bottom 20px;
 }
 .request__form_left {
   margin-right: 45%;
   padding: 20px 0 20px 30px;
   background-image: url(../images/arrow-left.png);
   background-repeat: no-repeat;
-  background-position: -4% 95%;
+  background-position: -4% 90%;
+  background-position: left -4% bottom 20px;
 }
 .r5mFeedback__label-wrapper {
   width: 70%;
@@ -797,6 +800,9 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+.request__form input {
+  border: solid 1px #ccc;
 }
 .request__form__button {
   text-align: center;
