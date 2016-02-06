@@ -552,7 +552,7 @@ body {
   background-color: grey;
   background-image: url(../images/header-2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .header {
   background: rgba(0,0,0,0.5);
