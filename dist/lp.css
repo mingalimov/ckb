@@ -592,18 +592,30 @@ body {
   z-index: 1;
 }
 .header__background {
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/header-2.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-animation: fadingBackground 8s ease-in 0s;
-  -moz-animation: fadingBackground 8s ease-in 0s;
-  -o-animation: fadingBackground 8s ease-in 0s;
-  -ms-animation: fadingBackground 8s ease-in 0s;
-  animation: fadingBackground 8s ease-in 0s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+}
+@media screen and (min-width: 601px) {
+  .header__background {
+    background-image: url(../images/header.jpg);
+    -webkit-animation: fadingBackground 8s ease-in 0s;
+    -moz-animation: fadingBackground 8s ease-in 0s;
+    -o-animation: fadingBackground 8s ease-in 0s;
+    -ms-animation: fadingBackground 8s ease-in 0s;
+    animation: fadingBackground 8s ease-in 0s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .slideshow li span {
+    -webkit-animation: imageAnimation 24s linear infinite 0s;
+    -moz-animation: imageAnimation 24s linear infinite 0s;
+    -o-animation: imageAnimation 24s linear infinite 0s;
+    -ms-animation: imageAnimation 24s linear infinite 0s;
+    animation: imageAnimation 24s linear infinite 0s;
+  }
 }
 @-webkit-keyframes fadingBackground {
 	0% {
@@ -673,11 +685,6 @@ body {
   background-repeat: none;
   opacity: 0;
   z-index: 0;
-  -webkit-animation: imageAnimation 24s linear infinite 0s;
-  -moz-animation: imageAnimation 24s linear infinite 0s;
-  -o-animation: imageAnimation 24s linear infinite 0s;
-  -ms-animation: imageAnimation 24s linear infinite 0s;
-  animation: imageAnimation 24s linear infinite 0s;
 }
 .slideshow li:nth-child(1) span { background-image: url(../images/header.jpg);}
 .slideshow li:nth-child(2) span {
@@ -967,6 +974,11 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+}
+.request-container .request__form__button:disabled {
+  background: #ccc;
+  color: #666;
+  border: solid 1px #aaa;
 }
 .request__picture-wrapper {
   

@@ -18,6 +18,12 @@
   position: relative;
 }
 
+.request-container .request__form__button:disabled {
+  background: #ccc;
+  color: #666;
+  border: solid 1px #aaa;
+}
+
 .request__picture-wrapper {
   /*float: left;*/
   width: 40%;
