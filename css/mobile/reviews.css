@@ -1,7 +1,13 @@
 @media screen and (max-width: 600px) {
   .reviews__header {
     height: auto;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
+  }
+
+  .review__header::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   .reviews__line {
@@ -10,7 +16,7 @@
 
   .reviews-container {
     padding: 0;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .review__photo-container {
@@ -24,4 +30,49 @@
     margin: 0;
   }
 
+  .carousel {
+    padding: 0;
+  }
+
+  .review__description {
+    text-align: left;
+  }
+
+  .carousel .reviews__arrow_left {
+    position: static;
+    margin: 20px 20px;
+    float: left;
+
+  }
+
+  .carousel .reviews__arrow_right {
+    position: static;
+    margin: 20px 20px;
+    float: right;
+  }
+
+  .carousel__inner-wrapper {
+    clear: both
+  }
+
+  .carousel__left-button__text {
+    display: block;
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 15px;
+    padding-left: 15px;
+  }
+
+  .carousel__right-button__text {
+    display: block;
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 15px;
+    margin-left: -26px;
+    margin-top: -13px;
+  }
 }

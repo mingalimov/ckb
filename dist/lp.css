@@ -569,6 +569,9 @@ body {
 .body-container {
   background: #fefefe;
 }
+.mobile-only {
+  display: none;
+}
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -938,20 +941,33 @@ body {
   margin-bottom: 20px;
   font-size: 1.3rem;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+@media screen and (max-width: 1150px) {
+  .profits-container {
+    padding: 50px 0 30px;
+  }
+  .profit {
+    overflow: hidden;
+  }
+  .profit__headline {
+    font-weight: 500;
+  }
 }
 .profit__description {
   margin: 0;
 }
 .request-section {
   background-color: #ebebeb;
-  padding: 15px 0;
+  padding: 30px 0;
 }
 .request-container {
   width: 100%;
-  max-width: 1040px;
+  max-width: 1000px;
   margin: 0 auto;
   
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #ffffff;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1077,7 +1093,6 @@ body {
   text-indent: 10px;
 }
 .info-container-wrapper {
-  
   padding: 20px 0;
 }
 .info-section {
@@ -1086,7 +1101,7 @@ body {
 .info-container {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1060px;
   margin: 0 auto 30px auto;
   padding: 30px 30px;
   color: #f8f8f8;
@@ -1194,17 +1209,24 @@ body {
   position: relative;
   background-color: #ebebeb;
   color: #2d2b2c;
-  background-image: url(../images/about-background.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 100% 70%;
 }
 .reasons__shadow {
+  background-image: url(../images/about-background-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 70%;
-  background-color: rgba(0, 0, 0, 0.6);
+}
+.reasons__shadow::after {
+  background-color: rgba(0, 0, 0, 0.75);
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 .reasons {
   width: 100%;
@@ -1378,9 +1400,9 @@ body {
 .reviews-container {
   position: relative;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 30px 50px;
+  padding: 30px 0;
   color: #2d2b2c;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1447,12 +1469,15 @@ body {
 }
 .footer {
   background-color: #fefefe;
+  padding: 0 0 10px 0;
+}
+.footer-top {
+  height: 20px;
   background-image: url(../images/footer-top.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 50px;
-  padding-top: 55px;
-  padding-bottom: 10px;
+  background-size: cover;
+  margin-bottom: 10px;
 }
 .footer-container {
   width: 100%;
@@ -1485,6 +1510,9 @@ body {
   text-decoration: none;
   border-bottom: 1px dashed #2b2a29;
 }
+.footer__order__call__link:hover {
+  color: black;
+}
 @media screen and (max-width: 600px) {
   body {
     min-width: 0;
@@ -1512,7 +1540,7 @@ body {
   }
   .header__logo-wrapper, .header__order-wrapper {
     float: none;
-    text-align: left;
+    text-align: center;
   }
   .header__logo-title {
     margin: 0;
@@ -1589,11 +1617,14 @@ body {
   .info-wrapper {
     margin: 0;
   }
+  .info-container-wrapper .flexible-container:last-child .info__headline {
+    margin-top: 40px;
+  }
 }
 @media screen and (max-width: 600px) {
   .reasons-section {
     background-image: none;
-    background-color: #ebebeb;
+    
   }
   .reasons__title {
     margin: 0;
@@ -1601,9 +1632,12 @@ body {
     font-size: 1.5rem;
   }
   .reasons-container {
-    background: none;
+    background: #ebebeb;
     padding: 0;
     box-shadow: none;
+    margin: -20px;
+    padding: 20px;
+    border-radius: 0;
   }
   .reasons-wrapper {
     margin: 0;
@@ -1627,7 +1661,7 @@ body {
     border: 2px solid red;
   }
   .about-container {
-    color: #2d2b2c;
+    color: #f8f8f8;
     text-align: left;
   }
   .about__license-container {
@@ -1639,20 +1673,25 @@ body {
     margin-top: 10px;
   }
   .reasons__shadow {
-    background: none;
+    
   }
 }
 @media screen and (max-width: 600px) {
   .reviews__header {
     height: auto;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
+  }
+  .review__header::after {
+    content: "";
+    display: table;
+    clear: both;
   }
   .reviews__line {
     display: none;
   }
   .reviews-container {
     padding: 0;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   .review__photo-container {
     max-width: 120px;
@@ -1662,6 +1701,44 @@ body {
   }
   .review__description, .review__header {
     margin: 0;
+  }
+  .carousel {
+    padding: 0;
+  }
+  .review__description {
+    text-align: left;
+  }
+  .carousel .reviews__arrow_left {
+    position: static;
+    margin: 20px 20px;
+    float: left;
+  }
+  .carousel .reviews__arrow_right {
+    position: static;
+    margin: 20px 20px;
+    float: right;
+  }
+  .carousel__inner-wrapper {
+    clear: both
+  }
+  .carousel__left-button__text {
+    display: block;
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .carousel__right-button__text {
+    display: block;
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 15px;
+    margin-left: -26px;
+    margin-top: -13px;
   }
 }
 @media screen and (max-width: 600px) {

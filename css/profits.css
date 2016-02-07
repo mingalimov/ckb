@@ -17,6 +17,8 @@
   box-sizing: border-box;
 }
 
+
+
 .profit {
   display: inline-block;
   width: 25%;
@@ -52,6 +54,20 @@
   margin-bottom: 20px;
   font-size: 1.3rem;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+@media screen and (max-width: 1150px) {
+  .profits-container {
+    padding: 50px 0 30px;
+  }
+  .profit {
+    overflow: hidden;
+  }
+  .profit__headline {
+    font-weight: 500;
+  }
 }
 
 .profit__description {

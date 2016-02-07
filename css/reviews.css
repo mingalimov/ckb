@@ -31,9 +31,9 @@
 .reviews-container {
   position: relative;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 30px 50px;
+  padding: 30px 0;
   color: #2d2b2c;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

@@ -94,7 +94,7 @@
           <figure class="profit__element">
             <img class="profit__picture" src="images/3.png" alt="Высококвалифицированные специалисты" title="Высококвалифицированные специалисты">
             <figcaption class="profit__text">
-              <p class="profit__headline">Квалифицированные
+              <p class="profit__headline" title="Квалифицированные специалисты">Квалифицированные
                 <br/>специалисты</p>
               <p class="profit__description">Гарантированная сдача экзаменов</p>
             </figcaption>
@@ -228,6 +228,7 @@
         </div>
       </section>
       <section class="about-container">
+        <div class="about__shadow"></div>
         <h2 class="about__headline">О нас:</h2>
         <p class="about__text">
           Высококвалифицированные преподаватели &laquo;МО Центр комплексной безопасности&raquo; помогут Вам подготовиться и успешно сдать экзамены в ГИМС и Гостехнадзоре. Понятные методические пособия способствуют быстрому и легкому усвоению материала, а 96% наших
@@ -289,6 +290,7 @@
               <p class="review__description">
                 Отдельная благодарность преподавателю теории и практики по управлению маломерными судами и гидроциклами
                 Першаеву Андрею Владимировичу. Материал доносит в доступной форме, <b>легко все запоминается</b> и сдается легко.
+              </p>
               <p class="review__description">
                 Сотрудники Учебного Центра <b>сопровождали</b> и <b>поддерживали</b> нас и на экзаменах теоретических,
                 и практических в Гостехнадзор, что придавало надежду и <b>уверенность</b> в получении прав.
@@ -296,8 +298,13 @@
               </p>
             </li>
           </ul>
-          <div class="reviews__arrow reviews__arrow_left carousel__left-button"></div>
-          <div class="reviews__arrow reviews__arrow_right carousel__right-button"></div>
+          <div class="reviews__arrow reviews__arrow_left carousel__left-button">
+            <span class="mobile-only carousel__left-button__text">Пред.</span>
+          </div>
+
+          <div class="reviews__arrow reviews__arrow_right carousel__right-button">
+            <span class="mobile-only carousel__right-button__text">След.</span>
+          </div>
         </div>
       </div>
     </div>
@@ -315,11 +322,11 @@
           <p class="request__subheadline">и начните обучение в удобное для Вас время</p>
           <div class="r5mFeedback__label-wrapper">
             <label class="r5mFeedback__label">
-              <span class="r5mFeedback__placeholder">Ваше имя*</span>
+              <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
               <input class="r5mFeedback__input" name="name" required="" type="text">
             </label>
             <label class="r5mFeedback__label">
-              <span class="r5mFeedback__placeholder">Телефон*</span>
+              <span class="r5mFeedback__placeholder">Телефон для связи*</span>
               <input class="r5mFeedback__input" name="phone" required type="text" />
             </label>
             <button class="request__form__button submit-button " type="submit">
@@ -333,6 +340,7 @@
 
 
   <footer class="footer clearfix">
+    <div class="footer-top"></div>
     <div class="flexible-container">
       <div class="footer__details footer__details_left">
         <p class="footer__contacts">
@@ -405,12 +413,15 @@
               <i class="fa fa-times"></i>
             </button>
             <h2 class="r5mFeedback__form__header">Закажите звонок</h2>
+            <p class="r5mFeedback__form__offer">
+              Наш специалист свяжется с Вами для консультации по интересующим Вас вопросам в ближайшее время.
+            </p>
             <label class="r5mFeedback__label">
-              <span class="r5mFeedback__placeholder">Имя*</span>
+              <span class="r5mFeedback__placeholder">Введите Ваше Имя*</span>
               <input class="r5mFeedback__input" name="name" required type="text" />
             </label>
             <label class="r5mFeedback__label">
-              <span class="r5mFeedback__placeholder">Телефон*</span>
+              <span class="r5mFeedback__placeholder">Телефон для связи*</span>
               <input class="r5mFeedback__input" name="phone" required type="text" />
             </label>
             <button class="r5mFeedback__submit-button submit-button " type="submit">
@@ -427,9 +438,11 @@
             <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer-close" type="button">
               <i class="fa fa-times"></i>
             </button>
-            <h2 class="r5mFeedback__form__header">Оставить Заявку</h2>
-            <label class="r5mFeedback__label">
-              <span class="r5mFeedback__placeholder">Имя*</span>
+            <h2 class="r5mFeedback__form__header">Заполните заявку</h2>
+            <p class="r5mFeedback__form__offer">
+              и наши специалисты свяжутся с Вами для подбора оптимального графика обучения
+            </p><label class="r5mFeedback__label">
+              <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
               <input class="r5mFeedback__input" name="name" required="" type="text">
             </label>
             <!-- <label class="r5mFeedback__label">
@@ -437,7 +450,7 @@
                 <input class="r5mFeedback__input" name="phone" required="" type="text">
               </label> -->
             <label class="r5mFeedback__label">
-              <span class="r5mFeedback__placeholder">Телефон*</span>
+              <span class="r5mFeedback__placeholder">Телефон для связи*</span>
               <input class="r5mFeedback__input" name="phone" type="text" required>
             </label>
             <label class="r5mFeedback__label">

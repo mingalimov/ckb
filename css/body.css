@@ -10,3 +10,7 @@ body {
 .body-container {
   background: #fefefe;
 }
+
+.mobile-only {
+  display: none;
+}

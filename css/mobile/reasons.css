@@ -1,8 +1,9 @@
 @media screen and (max-width: 600px) {
   .reasons-section {
     background-image: none;
-    background-color: #ebebeb;
+    /*background-color: #ebebeb;*/
   }
+
 
   .reasons__title {
     margin: 0;
@@ -11,9 +12,12 @@
   }
 
   .reasons-container {
-    background: none;
+    background: #ebebeb;
     padding: 0;
     box-shadow: none;
+    margin: -20px;
+    padding: 20px;
+    border-radius: 0;
   }
 
   .reasons-wrapper {
@@ -43,7 +47,7 @@
   }
 
   .about-container {
-    color: #2d2b2c;
+    color: #f8f8f8;
     text-align: left;
   }
 
@@ -59,7 +63,7 @@
 
 
   .reasons__shadow {
-    background: none;
+    /*background: none;*/
   }
 
 }

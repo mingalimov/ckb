@@ -20,4 +20,8 @@
     margin: 0;
   }
 
+  .info-container-wrapper .flexible-container:last-child .info__headline {
+    margin-top: 40px;
+  }
+
 }
