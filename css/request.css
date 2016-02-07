@@ -29,7 +29,9 @@
 }
 
 .request__picture_left {
-  float: left;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
 }
 
 .request__picture_right {
