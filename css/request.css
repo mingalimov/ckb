@@ -14,6 +14,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow: hidden;
+
+  position: relative;
 }
 
 .request__picture-wrapper {
@@ -23,6 +25,7 @@
   /*-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;*/
+
 }
 
 .request__picture_left {
@@ -30,12 +33,13 @@
 }
 
 .request__picture_right {
-  float: right;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
 }
 
 .request__picture {
-  height: 100%;
-  width: auto;
+  max-width: 100%;
   margin: 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -67,13 +71,13 @@
 }
 
 .request__form_left {
-  margin-right: 45%;
-  padding: 20px 0 20px 30px;
+  margin-right: 40%;
+  padding: 20px 0 20px 50px;
   background-image: url("../images/arrow-left.png");
   background-repeat: no-repeat;
 
-  background-position: -4% 90%;
-  background-position: left -4% bottom 20px;
+  background-position: 0 90%;
+  background-position: left 0 bottom 20px;
 }
 
 .r5mFeedback__label-wrapper {
