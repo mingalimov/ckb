@@ -996,6 +996,7 @@ body {
   position: absolute;
   bottom: 20px;
   left: 50%;
+  top: 20px;
 }
 .request__picture {
   max-width: 100%;
