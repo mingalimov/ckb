@@ -9,7 +9,10 @@
   "author": "mikhael",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-shell": "^0.5.2"
+    "bower": "^1.7.7",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5",
+    "html-minifier": "^1.2.0"
   }
 }
