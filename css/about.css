@@ -87,3 +87,12 @@
 .about__license__shadow:hover .about__license__loupe {
   opacity: 1;
 }
+
+
+.madein {
+  margin: 10px 0 0 0;
+  font-size: 0.8em;
+}
+.madein a {
+  color: #666;
+}
