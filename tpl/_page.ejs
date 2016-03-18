@@ -1,0 +1,22 @@
+<%-
+   include('../bower_components/r5m-cms/tpl/layout.ejs', {
+      title: 'Многопрофильный образовательный центр комплексной безопасности',
+      titleHtml: 'Многопрофильный образовательный центр комплексной безопасности',
+      tagline: '',
+      motto: '',
+      subtitle: locals.subtitle,
+      parts: [locals.parts, '_metrika'],
+      meta: '_meta',
+      isMobile: true,
+      hasFavicon: true,
+      fonts: {
+        google: [
+          'https://fonts.googleapis.com/css?family=Exo+2:400,500,700,600&subset=cyrillic'
+        ]
+      },
+      feedbackService: 'emailjs',
+      feedbackEmail: '',
+      yandexId: 35100450,
+      emailjsTpl: 'callme'
+   });
+%>

@@ -2,19 +2,4 @@
   body {
     min-width: 0;
   }
-
-  .flexible-container {
-    max-width: none;
-    min-width: 0;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 15px;
-  }
-
-
-
-
-
-
-
 }

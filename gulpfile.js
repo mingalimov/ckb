@@ -1,34 +1,29 @@
+"use strict";
+
 var gulp = require('gulp');
-var shell = require('gulp-shell');
+var options = {
+	packageJson: require('./package')
+};
 
-gulp.task('daemon', function () {
-	gulp.watch('css/**/*.css', ['css']);
-	gulp.watch('bower_components/**/*.css', ['css']);
-	gulp.watch('bower_components/**/*.js', ['js']);
-});
+var jsBuilder = require('./src/tasks/js-build');
+var cssBuilder = require('./src/tasks/css-build');
+var htmlBuilder = require('./src/tasks/html-build');
+var copyOnly = require('./src/tasks/copy-only');
+var ghDeploy = require('./src/tasks/deploy');
+var install = require('./src/tasks/install');
+var daemon = require('./src/tasks/daemon');
+var sitemap = require('./src/tasks/sitemap');
 
+/* Basic tasks */
+gulp.task('js', jsBuilder());
+gulp.task('css', cssBuilder());
+gulp.task('html', htmlBuilder(options));
+gulp.task('assets', copyOnly());
 
-gulp.task('js', function () {
-	gulp.src('bower_components/requirejs/require.js')
-		.pipe(shell([
-			'r.js -o baseUrl=. paths.r5m=bower_components/r5m-cms/js paths.vendor=bower_components name=bower_components/r5m-cms/js/index out=dist/lp.js'
-		]))
-		.pipe(gulp.dest('./dist/'));
-});
+gulp.task('daemon', ['js', 'css', 'html', 'assets'], daemon());
+gulp.task('deploy', ghDeploy(options));
+gulp.task('install', install(options));
 
-gulp.task('css', shell.task([
-	'r.js -o cssIn=bower_components/r5m-cms/css/all.css out=dist/engine.css',
-	'r.js -o cssIn=css/project.css out=dist/lp.css'
-]));
+gulp.task('sitemap', sitemap('./dist', options));
 
-gulp.task('install', shell.task([
-	'bower install https://github.com/milikhin/r5m-client.git',
-	'cd bower_components/r5m-cms; git init; \
-	git remote add origin git@github.com:milikhin/r5m-client.git; \
-	git add --all; \
-	git rm --cached .bower.json; \
-	git pull origin master;'
-]));
-
-
-gulp.task('default', ['js', 'css', 'daemon']);
+gulp.task('default', ['daemon']);
