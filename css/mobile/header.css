@@ -5,6 +5,14 @@
     padding-bottom: 30px;
   }
 
+  .header__order__vk {
+    margin-top: 20px;
+  }
+
+  .header-offer-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
   .header .flexible-container::before {
     height: auto;
