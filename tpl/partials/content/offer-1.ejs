@@ -16,6 +16,9 @@
             <span class="r5mFeedback__placeholder">Телефон для связи*</span>
             <input class="r5mFeedback__input" id="phone" name="phone" required type="text" />
           </label>
+          <p style="color: black; text-align: left; font-size: 0.9em; margin: 10px 0 5px; ">
+          	<input style="width: auto; display: inline" type="checkbox" checked onchange="this.closest('form').querySelector('.request__form__button').disabled=!this.checked"/> Я согласен на обработку персональных данных, принимаю условия <a style="color: inherit" target="_blank" href="/images/eua.pdf">пользовательского соглашения</a>
+          </p>
           <button class="request__form__button submit-button " type="submit">
             <span class="button__label">Отправить заявку</span>
           </button>
